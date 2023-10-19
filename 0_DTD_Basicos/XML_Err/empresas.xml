@@ -6,9 +6,9 @@
 <!ATTLIST empresa fecha_de_fundacion CDATA #IMPLIED>
 ]>
 <empresas>
-  <empresa nombre="Google" fecha_de_fundacion="1998">
-  <empresa nombre="Apple" fecha_de_fundacion="1976">
-  <empresa nombre="Microsoft" fecha_de_fundacion="1975">
+  <empresa nombre="Google" fecha_de_fundacion="1998"/>
+  <empresa nombre="Apple" fecha_de_fundacion="1976"/>
+  <empresa nombre="Microsoft" fecha_de_fundacion="1975"/>
 </empresas>
 
 <!--Por Jose Alba Arrufat-->
