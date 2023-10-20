@@ -6,7 +6,7 @@
         <!ELEMENT codigo EMPTY>
         <!ATTLIST codigo code CDATA #REQUIRED>
         <!ELEMENT diario EMPTY>
-        <!ATTLIST diaro daily CDATA #REQUIRED>
+        <!ATTLIST diario daily CDATA #REQUIRED>
         <!ELEMENT origen (#PCDATA)>
         <!ELEMENT destino (#PCDATA)>
         <!ELEMENT hora_de_salida EMPTY>
