@@ -9,9 +9,9 @@
         <!ATTLIST datos_cliente CIF CDATA #REQUIRED> <!---->
         <!ATTLIST datos_cliente nombre CDATA #REQUIRED>
         <!ATTLIST datos_cliente teléfono CDATA #REQUIRED>
-        <!ELEMENT detalle_factura (articulo)*>
+        <!ELEMENT detalle_factura (articulo*, importe)>
         <!ATTLIST detalle_factura CIF CDATA #REQUIRED>
-        <!ELEMENT articulo (codigo, tipo, descripcion, cantidad, oferta, pvp, importe)*>
+        <!ELEMENT articulo (codigo, tipo, descripcion, cantidad, oferta, pvp)*>
         <!ELEMENT codigo EMPTY>
         <!ATTLIST codigo cod CDATA #REQUIRED>
         <!ELEMENT tipo EMPTY>
@@ -49,8 +49,9 @@
             <oferta ofe="NO"/>
             <pvp pv="30€"/>
 
-                <importe total="85€"/>
         </articulo>
+        
+        <importe total="85€"/>
     </detalle_factura>
 </ficha>
 
