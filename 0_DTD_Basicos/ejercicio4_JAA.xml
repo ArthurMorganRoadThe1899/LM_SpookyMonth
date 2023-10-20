@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE ficha [
+        <!ELEMENT ficha (datos_emisor, datos_cliente, detalle_factura)?>
+        <!ELEMENT datos_emisor EMPTY>
+        <!ATTLIST datos_emisor CIF ID #REQUIRED>
+        <!ATTLIST datos_emisor nombre CDATA #REQUIRED>
+        <!ATTLIST datos_emisor teléfono CDATA #REQUIRED>
+        <!ELEMENT datos_cliente EMPTY>
+        <!ATTLIST datos_cliente CIF ID #REQUIRED>
+        <!ATTLIST datos_cliente nombre CDATA #REQUIRED>
+        <!ATTLIST datos_cliente teléfono CDATA #REQUIRED>
+        <!ELEMENT detalle_factura (codigoArt, tipo, descripcion, cantidad, oferta, pvp, importe)*>
+        <!ATTLIST detalle_factura CIF IDREF #REQUIRED>
+
+        <!ELEMENT codigoArt EMPTY> <!--ELEMENTS-->
+        <!ELEMENT tipo EMPTY>
+        <!ELEMENT descripcion EMPTY>
+        <!ELEMENT cantidad EMPTY>
+        <!ELEMENT oferta EMPTY>
+        <!ELEMENT pvp EMPTY>
+        <!ELEMENT importe EMPTY>
+
+        <ATTLIST codigoArt cod CDATA #REQUIRED> <!--ATTLISTS-->
+        <ATTLIST tipo type CDATA #REQUIRED>
+        <ATTLIST descripcion desc CDATA #REQUIRED>
+        <ATTLIST cantidad quan CDATA #REQUIRED>
+        <ATTLIST oferta offe CDATA #REQUIRED>
+        <ATTLIST pvp pv CDATA #REQUIRED>
+        <ATTLIST importe imp CDATA #REQUIRED>
+
+        ]>
+
+<ficha>
+    <datos_emisor CIF="44555666B" nombre="Librería Pérez" teléfono="777888999"/>
+    <datos_cliente CIF="33111222A" nombre="Biblioteca Txantrea" teléfono="333999444"/>
+
+    <detalle_factura CIF="44555666B">
+        <codigoArt/>
+        <tipo/>
+        <descripcion/>
+        <cantidad/>
+        <oferta/>
+        <pvp/>
+        <importe/>
+    </detalle_factura>
+    
+</ficha>>
