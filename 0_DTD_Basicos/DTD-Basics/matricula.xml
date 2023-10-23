@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE ciclos [
+        <!ELEMENT ciclos (matricula*)>
+        <!ELEMENT matricula (ciclo, alumnos, modulos)>
+        <!ELEMENT ciclo (#PCDATA)>
+        <!ELEMENT alumnos (alumno*)>
+        <!ELEMENT alumno (#PCDATA)>
+        <!ATTLIST alumno año CDATA #REQUIRED>
+        <!ELEMENT modulos (modulo*)>
+        <!ELEMENT modulo (#PCDATA)>
+        <!ATTLIST modulo profesor CDATA #REQUIRED>
+        ]>
+<ciclos>
+    <matricula>
+        <ciclo>DAW</ciclo>
+        <alumnos>
+            <alumno año="2024">Alberto</alumno>
+            <alumno año="2023">Ariel</alumno>
+            <alumno año="2023">Carlos</alumno>
+        </alumnos>
+        <modulos>
+            <modulo profesor="Esther">Bases de datos</modulo>
+            <modulo profesor="Carles">Lenguajes de marca</modulo>
+            <modulo profesor="Verónica">Programación</modulo>
+        </modulos>
+    </matricula>
+
+    <matricula>
+        <ciclo>DAM</ciclo>
+        <alumnos>
+            <alumno año="2024">Marco</alumno>
+            <alumno año="2023">Pablo</alumno>
+            <alumno año="2023">Pablo</alumno>
+        </alumnos>
+        <modulos>
+            <modulo profesor="Esther">Bases de datos</modulo>
+            <modulo profesor="Jaume">Lenguajes de marca</modulo>
+            <modulo profesor="Verónica">Programación</modulo>
+        </modulos>
+    </matricula>
+</ciclos>
+
