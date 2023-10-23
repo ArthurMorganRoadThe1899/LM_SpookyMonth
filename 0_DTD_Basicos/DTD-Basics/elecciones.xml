@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE eleciones [
+        <!ELEMENT eleciones (descripcion, datos, resultados)>
+        <!ELEMENT descripcion (#PCDATA)>
+        <!ELEMENT datos (fecha, censo, abstencion, vBlanco)>
+        <!ELEMENT fecha (#PCDATA)>
+        <!ELEMENT censo EMPTY>
+        <!ATTLIST censo cantidad CDATA #REQUIRED>
+        <!ELEMENT abstencion EMPTY>
+        <!ATTLIST abstencion cantidad CDATA #REQUIRED>
+        <!ELEMENT vBlanco EMPTY>
+        <!ATTLIST vBlanco cantidad CDATA #REQUIRED>
+        <!ELEMENT resultados (partido*)>
+        <!ELEMENT partido (nombre, votos)>
+        <!ELEMENT nombre (#PCDATA)>
+        <!ELEMENT votos EMPTY>
+        <!ATTLIST votos cantidad CDATA #REQUIRED>
+        ]>
+<eleciones>
+    <descripcion>Votaciones de Marte</descripcion>
+    <datos>
+        <fecha>2/5/1899</fecha>
+        <censo cantidad="3467"/>
+        <abstencion cantidad="1235"/>
+        <vBlanco cantidad="169"/>
+    </datos>
+    <resultados>
+        <partido>
+            <nombre>Carrefur</nombre>
+            <votos cantidad="1456"/>
+        </partido>
+        <partido>
+            <nombre>P.E.O (Perry El Ornitorrinco)</nombre>
+            <votos cantidad="607"/>
+        </partido>
+        <partido>
+            <nombre>El SPLATO</nombre>
+            <votos cantidad="0"/>
+        </partido>
+    </resultados>
+</eleciones>
+
+<!--Hecho por Jose Alba Arrufat-->
