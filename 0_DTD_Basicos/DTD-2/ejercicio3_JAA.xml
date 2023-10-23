@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!DOCTYPE aeropuertosJFK [
-        <!ELEMENT aeropuertosJFK (panel_de_vuelos)>
+<!DOCTYPE aeropuertos [
+        <!ELEMENT aeropuertos (panel_de_vuelos)>
         <!ELEMENT panel_de_vuelos (vuelo*)>
-        <!ELEMENT vuelo (codigo, diario, origen, destino, hora_de_salida, hora_de_llegada, estado)*>
+        <!ELEMENT vuelo (codigo, diario?, origen, destino, hora_de_salida, hora_de_llegada, estado)*>
         <!ELEMENT codigo EMPTY>
         <!ATTLIST codigo code CDATA #REQUIRED>
-        <!ELEMENT diario EMPTY>
-        <!ATTLIST diario daily CDATA #REQUIRED>
+        <!ELEMENT diario (#PCDATA)>
         <!ELEMENT origen (#PCDATA)>
         <!ELEMENT destino (#PCDATA)>
         <!ELEMENT hora_de_salida EMPTY>
@@ -17,11 +16,11 @@
         <!ATTLIST estado status CDATA #REQUIRED>
         ]>
 
-<aeropuertosJFK>
+<aeropuertos>
   <panel_de_vuelos>
     <vuelo>
         <codigo code="V22"/>
-        <diario daily="SI"/>
+        <diario>SI</diario>
         <origen> New York </origen>
         <destino> Chicago </destino>
         <hora_de_salida hour="9:30"/>
@@ -30,7 +29,7 @@
     </vuelo>
     <vuelo>
         <codigo code="V23"/>
-        <diario daily="NO"/>
+        <diario>NO</diario>
         <origen> New York </origen>
         <destino> Miami </destino>
         <hora_de_salida hour="10:15"/>
@@ -38,7 +37,6 @@
         <estado status="C"> Cancelado </estado>
     </vuelo>
   </panel_de_vuelos>
-</aeropuertosJFK>
-
+</aeropuertos>
 
 <!--Hecho por Jose Alba Arrufat-->
