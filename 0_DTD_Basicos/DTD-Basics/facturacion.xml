@@ -1,29 +1,46 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!DOCTYPE facturacion [
         <!ELEMENT facturacion (empresa,factura*)>
+
         <!ELEMENT empresa (raosocial)>
-        <!ELEMENT raosocial (nombre, apellido? direccion, codpos, poblacion, (NIF | DNI))>
+
+        <!ELEMENT raosocial (nombre, apellido?, direccion, codpos, poblacion, (NIF | DNI))>
         <!ATTLIST raosocial tipo CDATA #REQUIRED>
+
         <!ELEMENT nombre (#PCDATA)>
+
         <!ELEMENT direccion (#PCDATA)>
+
         <!ELEMENT codpos EMPTY>
         <!ATTLIST codpos numero CDATA #REQUIRED>
+
         <!ELEMENT poblacion (#PCDATA)>
+
         <!ELEMENT NIF EMPTY>
         <!ATTLIST NIF numero CDATA #REQUIRED>
+
         <!ELEMENT DNI EMPTY>
         <!ATTLIST DNI numero CDATA #REQUIRED>
-        <!ELEMENT factura (cliente, recibo* fecha, subtotal, iva, total)>
+
+        <!ELEMENT factura (cliente, recibo*, fecha, subtotal, iva, total)>
+
         <!ELEMENT cliente (raosocial)>
+
         <!ELEMENT apellido (#PCDATA)>
+
         <!ELEMENT recibo (fecha, totalRecibo, lineas)>
         <!ATTLIST recibo numero CDATA #REQUIRED>
+
         <!ELEMENT fecha (#PCDATA)>
+
         <!ELEMENT totalRecibo (#PCDATA)>
+
         <!ELEMENT lineas (producto)>
+
         <!ELEMENT producto (descripcion, cantidad, precioUnitario)>
         <!ATTLIST producto codigo CDATA #REQUIRED>
         <!ELEMENT descripcion (#PCDATA)>
+
         <!ELEMENT cantidad (#PCDATA)>
         <!ELEMENT precioUnitario (#PCDATA)>
         <!ELEMENT subtotal (#PCDATA)>
@@ -34,11 +51,42 @@
 <facturacion>
     <empresa>
         <raosocial tipo="empresa">
-            <nombre> PCdelicado </nombre>
-            <direccion> DI</direccion>
-            <codpos numero="11572"/>
-            <poblacion> Arbacete</poblacion>
-            <NIF numero="A1112223"/>
+            <nombre>Delicat SL</nombre>
+            <direccion>c/Truges, 12</direccion>
+            <codpos numero="17760"/>
+            <poblacion>Vilabertran</poblacion>
+            <NIF numero="B17818181NK"/>
         </raosocial>
     </empresa>
+
+    <factura>
+        <cliente>
+            <raosocial tipo="persona">
+                <nombre>Yuan</nombre>
+                <apellido>Eduardo Tazcual</apellido>
+                <direccion>c/Corazón de Jesús</direccion>
+                <codpos numero="32457"/>
+                <poblacion>Arbacete</poblacion>
+                <DNI numero="40444444-M"/>
+            </raosocial>
+        </cliente>
+
+        <recibo numero="28">
+            <fecha>14-10-2010</fecha>
+            <totalRecibo>220</totalRecibo>
+            <lineas>
+                <producto codigo="11111">
+                    <descripcion>Ternera</descripcion>
+                    <cantidad>1</cantidad>
+                    <precioUnitario>25€</precioUnitario>
+                </producto>
+            </lineas>
+        </recibo>
+
+        <fecha>15-10-2010</fecha>
+        <subtotal>25</subtotal>
+        <iva>20</iva>
+        <total>30</total>
+
+    </factura>
 </facturacion>
