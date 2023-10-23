@@ -59,6 +59,7 @@
         </raosocial>
     </empresa>
 
+
     <factura>
         <cliente>
             <raosocial tipo="persona">
@@ -73,12 +74,12 @@
 
         <recibo numero="28">
             <fecha>14-10-2010</fecha>
-            <totalRecibo>220</totalRecibo>
+            <totalRecibo>25</totalRecibo>
             <lineas>
                 <producto codigo="11111">
                     <descripcion>Ternera</descripcion>
                     <cantidad>1</cantidad>
-                    <precioUnitario>25€</precioUnitario>
+                    <precioUnitario>25</precioUnitario>
                 </producto>
             </lineas>
         </recibo>
@@ -87,6 +88,37 @@
         <subtotal>25</subtotal>
         <iva>20</iva>
         <total>30</total>
+    </factura>
 
+
+    <factura>
+        <cliente>
+            <raosocial tipo="persona">
+                <nombre>David</nombre>
+                <apellido>Gómez Delicado</apellido>
+                <direccion>c/Maria del Carmen</direccion>
+                <codpos numero="12600"/>
+                <poblacion>La vall</poblacion>
+                <DNI numero="30474324-D"/>
+            </raosocial>
+        </cliente>
+        <recibo numero="30">
+            <fecha>30-10-2010</fecha>
+            <totalRecibo>30</totalRecibo>
+            <lineas>
+                <producto codigo="22222">
+                    <descripcion>Calabaza spookeh month</descripcion>
+                    <cantidad>2</cantidad>
+                    <precioUnitario>10</precioUnitario>
+                </producto>
+            </lineas>
+        </recibo>
+
+        <fecha>31-10-2010</fecha>
+        <subtotal>10</subtotal>
+        <iva>20</iva>
+        <total>12</total>
     </factura>
 </facturacion>
+
+<!--Hecho por Jose Alba Arrufat-->
