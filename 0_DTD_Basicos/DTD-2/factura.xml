@@ -2,11 +2,11 @@
 <!DOCTYPE ficha [
         <!ELEMENT ficha (datos_emisor, datos_cliente, detalle_factura)?>
         <!ELEMENT datos_emisor EMPTY>
-        <!ATTLIST datos_emisor CIF CDATA #REQUIRED> <!---->
+        <!ATTLIST datos_emisor CIF CDATA #REQUIRED>
         <!ATTLIST datos_emisor nombre CDATA #REQUIRED>
         <!ATTLIST datos_emisor teléfono CDATA #REQUIRED>
         <!ELEMENT datos_cliente EMPTY>
-        <!ATTLIST datos_cliente CIF CDATA #REQUIRED> <!---->
+        <!ATTLIST datos_cliente CIF CDATA #REQUIRED>
         <!ATTLIST datos_cliente nombre CDATA #REQUIRED>
         <!ATTLIST datos_cliente teléfono CDATA #REQUIRED>
         <!ELEMENT detalle_factura (articulo*, importe)>
@@ -14,16 +14,12 @@
         <!ELEMENT articulo (codigo, tipo, descripcion, cantidad, oferta, pvp)*>
         <!ELEMENT codigo EMPTY>
         <!ATTLIST codigo cod CDATA #REQUIRED>
-        <!ELEMENT tipo EMPTY>
-        <!ATTLIST tipo tip CDATA #REQUIRED>
-        <!ELEMENT descripcion EMPTY>
-        <!ATTLIST descripcion desc CDATA #IMPLIED>
-        <!ELEMENT cantidad EMPTY>
-        <!ATTLIST cantidad can CDATA #REQUIRED>
-        <!ELEMENT oferta EMPTY>
-        <!ATTLIST oferta ofe CDATA #REQUIRED>
+        <!ELEMENT tipo (#PCDATA)>
+        <!ELEMENT descripcion (#PCDATA)>
+        <!ELEMENT cantidad (#PCDATA)>
+        <!ELEMENT oferta (#PCDATA)>
         <!ELEMENT pvp EMPTY>
-        <!ATTLIST pvp pv CDATA #REQUIRED>
+        <!ATTLIST pvp total CDATA #REQUIRED>
         <!ELEMENT importe EMPTY>
         <!ATTLIST importe total CDATA #REQUIRED>
         ]>
@@ -35,23 +31,23 @@
     <detalle_factura CIF="A44555666B">
         <articulo>
             <codigo cod="AW7"/>
-            <tipo tip="Libro"/>
-            <descripcion desc="Analítica Web 2.0"/>
-            <cantidad can="1"/>
-            <oferta ofe="SI"/>
-            <pvp pv="25€"/>
+            <tipo>Libro</tipo>
+            <descripcion>Analítica Web 2.0</descripcion>
+            <cantidad>1</cantidad>
+            <oferta>SI</oferta>
+            <pvp total="25"/>
         </articulo>
+
         <articulo>
             <codigo cod="CP5"/>
-            <tipo tip="DVD"/>
-            <descripcion desc="Curso de HTML"/>
-            <cantidad can="2"/>
-            <oferta ofe="NO"/>
-            <pvp pv="30€"/>
-
+            <tipo>DVD</tipo>
+            <descripcion>Curso de HTML</descripcion>
+            <cantidad>2</cantidad>
+            <oferta>NO</oferta>
+            <pvp total="30"/>
         </articulo>
         
-        <importe total="85€"/>
+        <importe total="85"/>
     </detalle_factura>
 </ficha>
 
