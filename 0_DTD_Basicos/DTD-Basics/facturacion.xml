@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE facturacion [
+        <!ELEMENT facturacion (empresa,factura*)>
+        <!ELEMENT empresa (raosocial)>
+        <!ELEMENT raosocial (nombre, apellido? direccion, codpos, poblacion, (NIF | DNI))>
+        <!ATTLIST raosocial tipo CDATA #REQUIRED>
+        <!ELEMENT nombre (#PCDATA)>
+        <!ELEMENT direccion (#PCDATA)>
+        <!ELEMENT codpos EMPTY>
+        <!ATTLIST codpos numero CDATA #REQUIRED>
+        <!ELEMENT poblacion (#PCDATA)>
+        <!ELEMENT NIF EMPTY>
+        <!ATTLIST NIF numero CDATA #REQUIRED>
+        <!ELEMENT DNI EMPTY>
+        <!ATTLIST DNI numero CDATA #REQUIRED>
+        <!ELEMENT factura (cliente, recibo* fecha, subtotal, iva, total)>
+        <!ELEMENT cliente (raosocial)>
+        <!ELEMENT apellido (#PCDATA)>
+        <!ELEMENT recibo (fecha, totalRecibo, lineas)>
+        <!ATTLIST recibo numero CDATA #REQUIRED>
+        <!ELEMENT fecha (#PCDATA)>
+        <!ELEMENT totalRecibo (#PCDATA)>
+        <!ELEMENT lineas (producto)>
+        <!ELEMENT producto (descripcion, cantidad, precioUnitario)>
+        <!ATTLIST producto codigo CDATA #REQUIRED>
+        <!ELEMENT descripcion (#PCDATA)>
+        <!ELEMENT cantidad (#PCDATA)>
+        <!ELEMENT precioUnitario (#PCDATA)>
+        <!ELEMENT subtotal (#PCDATA)>
+        <!ELEMENT iva (#PCDATA)>
+        <!ELEMENT total (#PCDATA)>
+        ]>
+
+<facturacion>
+    <empresa>
+        <raosocial tipo="empresa">
+            <nombre> PCdelicado </nombre>
+            <direccion> DI</direccion>
+            <codpos numero="11572"/>
+            <poblacion> Arbacete</poblacion>
+            <NIF numero="A1112223"/>
+        </raosocial>
+    </empresa>
+</facturacion>
