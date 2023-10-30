@@ -1,0 +1,28 @@
+<!DOCTYPE repositorios [
+        <!ELEMENT repositorios (repositorio*)>
+        <!ELEMENT repositorio (nombre, categoria, software_list, compañia?)>
+        <!ELEMENT nombre (#PCDATA)>
+        <!ELEMENT categoria (#PCDATA)>
+        <!ELEMENT software_list (file*)>
+        <!ELEMENT file (nombre, etiqueta?, tipo, puntuacion?, size, checksum, fecha_subida, desarrolladores)>
+        <!ATTLIST file identificador ID #REQUIRED>
+        <!ELEMENT etiqueta (#PCDATA)>
+        <!ELEMENT tipo EMPTY>
+        <!ATTLIST tipo cual (free | comercial) "free">
+        <!ELEMENT puntuacion EMPTY>
+        <!ATTLIST puntuacion high (0|1|2|3|4|5) "0">
+        <!ELEMENT size (#PCDATA)>
+        <!ELEMENT checksum EMPTY>
+        <!ATTLIST checksum is (Y | N) "N">
+        <!ELEMENT fecha_subida (#PCDATA)>
+        <!ELEMENT desarrolladores (desarrollador*)>
+        <!ELEMENT desarrollador (nombre, apellido, web_personal?, ocupacion)>
+        <!ATTLIST desarrollador id ID #REQUIRED> <!--Lo pongo así, aunque pondría una sección aparte para cada desarrollador, y aquí haría un IDREF-->
+        <!ELEMENT apellido (#PCDATA)>
+        <!ELEMENT web_personal (#PCDATA)>
+        <!ELEMENT ocupacion EMPTY>
+        <!ATTLIST ocupacion cual (freelancer | interno) "interno">
+        <!ELEMENT compañia (nombre, email, web)>
+        <!ELEMENT email (#PCDATA)>
+        <!ELEMENT web (#PCDATA)>
+        ]>
