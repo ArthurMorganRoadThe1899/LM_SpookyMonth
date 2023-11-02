@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE blogs [
+        <!ELEMENT blogs (blog*)>
+        <!ELEMENT blog (titulo, fecha_pub, hora_pub, noticias, puntuacion)>
+        <!ATTLIST blog categoria (posting|memes|animales|programacion|special_event) "posting">
+        <!ELEMENT titulo (#PCDATA)>
+        <!ELEMENT fecha_pub EMPTY>
+        <!ATTLIST fecha_pub data CDATA #REQUIRED>
+        <!ELEMENT hora_pub EMPTY>
+        <!ATTLIST hora_pub hour CDATA #REQUIRED>
+        <!ELEMENT noticias (noticia*)>
+        <!ELEMENT noticia (titulo, fecha_pub, descripcion, comentarios*)>
+        <!ELEMENT descripcion (#PCDATA)>
+        <!ELEMENT comentarios (comentario*)>
+        <!ELEMENT comentario (contenido, fecha_pub, hora_pub, usuario, imagen?)>
+        <!ELEMENT contenido (#PCDATA)>
+        <!ELEMENT usuario ANY>
+        <!ATTLIST usuario type (anoymous) #IMPLIED>
+        <!ELEMENT imagen EMPTY>
+        <!ATTLIST imagen URL CDATA #REQUIRED>
+        <!ELEMENT puntuacion EMPTY>
+        <!ATTLIST puntuacion rate CDATA (0|1|2|3) "0">
+        ]>
+
+<blogs>
+    <blog categoria="animales">
+        <titulo></titulo>
+        <fecha_pub data=""/>
+        <hora_pub hour=""/>
+        <noticias></noticias>
+        <puntuacion/>
+    </blog>
+</blogs>
