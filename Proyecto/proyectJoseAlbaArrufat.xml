@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<!--El concepto de este proyecto va a ser videojuegos-personajes-->
+
+<!DOCTYPE videojuegos [
+        <!ELEMENT videojuegos (videojuego*)>
+        <!ELEMENT videojuego (fechaPub, genero, rate, personajes)>
+        <!ATTLIST videojuego nombre CDATA #REQUIRED>
+        <!ELEMENT fechaPub (#PCDATA)>
+        <!ELEMENT genero (#PCDATA)>
+        <!ELEMENT rate EMPTY>
+        <!ATTLIST rate category (0|1|2|3|4|5|6|7|8|9|10) "0">
+        <!ELEMENT personajes (personaje*)>
+        <!ELEMENT personaje (nombre, genero_c, edad, profesion?, rol?, arma?, habilidades?, actor)>
+        <!ELEMENT nombre (#PCDATA)>
+        <!ELEMENT genero_c EMPTY>
+        <!ATTLIST genero_c which (hombre|mujer|indeterminado) "indeterminado">
+        <!ELEMENT edad (#PCDATA)>
+        <!ELEMENT profesion (#PCDATA)>
+        <!ELEMENT rol (#PCDATA)>
+        <!ELEMENT habilidades (habilidad*)>
+        <!ELEMENT habilidad (#PCDATA)>
+        <!ATTLIST habilidad desc CDATA #IMPLIED>
+        <!ELEMENT arma (#PCDATA)>
+        <!ELEMENT actor (#PCDATA)>
+                ]>
+
+<videojuegos>
+    <videojuego nombre="Red Dead Redemption 2">
+        <fechaPub>26/10/2018</fechaPub>
+        <genero>acción aventura-western</genero>
+        <rate category="9"/>
+
+        <personajes>
+            <personaje>
+                <nombre>Arthur Morgan</nombre>
+                <genero_c which="hombre"/>
+                <edad>36</edad>
+                <profesion>Forajido</profesion>
+                <arma>Armas de fuego</arma>
+                    <habilidades>
+                        <habilidad desc="Le permite ver el tiempo ralentizado a la hora de apuntar">Dead Eye</habilidad>
+                    </habilidades>
+                <actor></actor>
+            </personaje>
+
+            <personaje>
+                <nombre>John Marston</nombre>
+                <genero_c which="hombre"/>
+                <edad>30</edad>
+                <profesion>Forajido</profesion>
+                <arma>Revolver de Cattleman</arma>
+                    <habilidades>
+                        <habilidad desc="Le permite ver el tiempo ralentizado a la hora de apuntar">Dead Eye</habilidad>
+                    </habilidades>
+                <actor></actor>
+            </personaje>
+
+            <personaje>
+                <nombre>Dutch Van Der Linde</nombre>
+                <genero_c which="hombre"/>
+                <edad>44</edad>
+                <profesion>Forajido</profesion>
+                <arma>Revólver Schofield</arma>
+                    <habilidades>
+                        <habilidad desc="Le permite ver el tiempo ralentizado a la hora de apuntar">Dead Eye</habilidad>
+                    </habilidades>
+                <actor></actor>
+            </personaje>
+            
+            <personaje>
+                <nombre>Hosea Matthews</nombre>
+                <genero_c which="hombre"/>
+                <edad>55</edad>
+                <actor></actor>
+            </personaje>
+        </personajes>
+    </videojuego>
+</videojuegos>
