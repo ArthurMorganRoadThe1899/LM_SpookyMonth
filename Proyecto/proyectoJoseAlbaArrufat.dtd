@@ -1,0 +1,20 @@
+<!ELEMENT videojuegos (videojuego*)>
+        <!ELEMENT videojuego (fechaPub, genero, rate, personajes)>
+        <!ATTLIST videojuego nombre CDATA #REQUIRED>
+        <!ELEMENT fechaPub (#PCDATA)>
+        <!ELEMENT genero (#PCDATA)>
+        <!ELEMENT rate EMPTY>
+        <!ATTLIST rate category (0|1|2|3|4|5|6|7|8|9|10) "0">
+        <!ELEMENT personajes (personaje*)>
+        <!ELEMENT personaje (nombre, genero_c, edad, profesion?, rol?, arma?, habilidades?, actor)>
+        <!ELEMENT nombre (#PCDATA)>
+        <!ELEMENT genero_c EMPTY>
+        <!ATTLIST genero_c which (hombre|mujer|indeterminado) "indeterminado">
+        <!ELEMENT edad (#PCDATA)>
+        <!ELEMENT profesion (#PCDATA)>
+        <!ELEMENT rol (#PCDATA)>
+        <!ELEMENT habilidades (habilidad*)>
+        <!ELEMENT habilidad (#PCDATA)>
+        <!ATTLIST habilidad desc CDATA #IMPLIED>
+        <!ELEMENT arma (#PCDATA)>
+        <!ELEMENT actor (#PCDATA)>
