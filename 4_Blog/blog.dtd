@@ -1,4 +1,3 @@
-<!DOCTYPE blogs [
         <!ELEMENT blogs (blog*)>
         <!ELEMENT blog (titulo, fecha_pub, hora_pub, noticias, puntuacion)>
         <!ATTLIST blog categoria (posting|memes|animales|programacion|special_event|breaking_news|anime) "posting">
@@ -19,4 +18,3 @@
         <!ATTLIST imagen URL CDATA #REQUIRED>
         <!ELEMENT puntuacion EMPTY>
         <!ATTLIST puntuacion rate (0|1|2|3) "0">
-        ]>
