@@ -5,6 +5,59 @@
 <!DOCTYPE videojuegos SYSTEM "proyectoJoseAlbaArrufat.dtd">
 
 <videojuegos>
+    
+    <videojuego nombre="Kingdom Hearts">
+        <fechaPub>17/7/2002</fechaPub>
+        <genero>Action RPG</genero>
+        <rate category="8"/>
+
+        <personajes>
+            <personaje>
+                <nombre>Sora</nombre>
+                <genero_c which="hombre"/>
+                <edad>14</edad>
+                <rol>Elegido falso / Protagonista</rol>
+                    <armas>
+                        <arma>Cadena del reino</arma>
+                    </armas>
+                <actor>Luke Manriquez</actor>
+            </personaje>
+
+            <personaje>
+                <nombre>Riku</nombre>
+                <genero_c which="hombre"/>
+                <edad>15</edad>
+                <rol>Elegido / Rival</rol>
+                    <armas>
+                        <arma>Devoralmas</arma>
+                    </armas>
+                <actor>Ty Panitz</actor>
+            </personaje>
+
+            <personaje>
+                <nombre>Kairi</nombre>
+                <genero_c which="mujer"/>
+                <edad>13</edad>
+                <rol>Princesa de la luz</rol>
+                <actor>Ariel Winter</actor>
+            </personaje>
+
+            <personaje>
+                <nombre>Ansem</nombre>
+                <genero_c which="hombre"/>
+                <edad desc="indeterminado"/>
+                <rol>Antagonista</rol>
+                <armas>
+                    <arma desc="Solo puede usarla mientras posea a un usuario de llave espada">Llave espada oscura</arma>
+                    <arma desc="Es un stand">SGuardián de Xehanort</arma>
+                </armas>
+                <actor>Billy Zane</actor>
+            </personaje>
+        </personajes>
+    </videojuego>
+
+    <!---->
+
     <videojuego nombre="Red Dead Redemption 2">
         <fechaPub>26/10/2018</fechaPub>
         <genero>acción aventura-western</genero>
@@ -16,23 +69,36 @@
                 <genero_c which="hombre"/>
                 <edad>36</edad>
                 <profesion>Forajido</profesion>
-                <arma>Armas de fuego</arma>
+                <profesion>Cazarecompensas</profesion>
+                <rol>Protagonista</rol>
+                    <armas>
+                        <arma>Pareja de pistola M1899</arma>
+                        <arma>Revólver de Cattleman</arma>
+                        <arma>Witcher de repetición</arma>
+                        <arma>Escopeta de corredera</arma>
+                    </armas>
                     <habilidades>
                         <habilidad desc="Le permite ver el tiempo ralentizado a la hora de apuntar">Dead Eye</habilidad>
                     </habilidades>
-                <actor></actor>
+                <actor>Roger Clark</actor>
             </personaje>
 
             <personaje>
                 <nombre>John Marston</nombre>
                 <genero_c which="hombre"/>
                 <edad>30</edad>
-                <profesion>Forajido</profesion>
-                <arma>Revolver de Cattleman</arma>
+                <profesion when="Historia principal">Forajido</profesion>
+                <profesion when="Epilogo">Granjero</profesion>
+                    <armas>
+                        <arma>Pareja de pistola M1899</arma>
+                        <arma>Revólver de Cattleman</arma>
+                        <arma>Witcher de repetición</arma>
+                        <arma>Escopeta de corredera</arma>
+                    </armas>
                     <habilidades>
                         <habilidad desc="Le permite ver el tiempo ralentizado a la hora de apuntar">Dead Eye</habilidad>
                     </habilidades>
-                <actor></actor>
+                <actor>Rob Wiethoff</actor>
             </personaje>
 
             <personaje>
@@ -41,11 +107,15 @@
                 <edad>44</edad>
                 <profesion>Forajido</profesion>
                 <rol>Líder de la banda</rol>
-                <arma>Revólver Schofield</arma>
+                    <armas>
+                        <arma>Revólver Cattleman</arma>
+                        <arma>Pistola Semi-Automática</arma>
+                        <arma>Pareja de revólver Schofield</arma>
+                    </armas>
                     <habilidades>
                         <habilidad desc="Le permite ver el tiempo ralentizado a la hora de apuntar">Dead Eye</habilidad>
                     </habilidades>
-                <actor></actor>
+                <actor>Benjamin Byron Davis</actor>
             </personaje>
             
             <personaje>
@@ -53,22 +123,221 @@
                 <genero_c which="hombre"/>
                 <edad>55</edad>
                 <profesion>Forajido</profesion>
-                <arma>Revolver de Cattleman</arma>
-                <actor></actor>
+                <rol>Co-fundador</rol>
+                    <armas>
+                        <arma>Revólver de Cattleman</arma>
+                    </armas>
+                <actor>Curzon Dobell</actor>
             </personaje>
 
             <personaje>
-                <nombre></nombre>
+                <nombre>Micah Bell</nombre>
                 <genero_c which="hombre"/>
                 <edad>39</edad>
                 <profesion>Forajido</profesion>
-                <rol>Soplón</rol>
-                <arma>Revólver de Micah</arma>
-                <habilidades>
-                    <habilidad desc="Le permite ver el tiempo ralentizado a la hora de apuntar">Dead Eye</habilidad>
-                </habilidades>
-                <actor></actor>
+                <rol>Antagonista</rol>
+                    <armas>
+                        <arma>Pareja de revólvers de doble acción personalizados</arma>
+                    </armas>
+                    <habilidades>
+                        <habilidad desc="Le permite ver el tiempo ralentizado a la hora de apuntar">Dead Eye</habilidad>
+                    </habilidades>
+                <actor>Peter Blomquist</actor>
+            </personaje>
+
+            <personaje>
+                <nombre>Sadie Adler</nombre>
+                <genero_c which="mujer"/>
+                <edad>25</edad>
+                <profesion when="Historia principal">Forajido</profesion>
+                <profesion when="Epilogo">Cazarecompensas</profesion>
+                <armas>
+                    <arma>Revólver de Cattleman</arma>
+                    <arma>Carabina de repetición</arma>
+                </armas>
+                <actor>Alex McKenna</actor>
+            </personaje>
+
+            <personaje>
+                <nombre>Charles Smith</nombre>
+                <genero_c which="hombre"/>
+                <edad>27</edad>
+                <profesion>Forajido</profesion>
+                    <armas>
+                        <arma>Escopeta recortada</arma>
+                    </armas>
+                    <habilidades>
+                        <habilidad>Conocimientos en supervivencia</habilidad>
+                    </habilidades>
+                <actor>Noshir Dalal</actor>
+            </personaje>
+
+            <personaje>
+                <nombre>Javier Escuella</nombre>
+                <genero_c which="hombre"/>
+                <edad>26</edad>
+                <profesion>Forajido</profesion>
+                    <armas>
+                        <arma>Revólver de doble acción</arma>
+                    </armas>
+                <actor>Gabriel Sloyer</actor>
+            </personaje>
+            
+            <personaje>
+                <nombre>Bill Williamson</nombre>
+                <genero_c which="hombre"/>
+                <edad>33</edad>
+                <profesion>Forajido</profesion>
+                    <armas>
+                        <arma>Revólver Cattleman</arma>
+                        <arma>Winchester de Repetición</arma>
+                        <arma>Revólver Schofield</arma>
+                    </armas>
+                <actor>Rob Wiethoff</actor>
+            </personaje>
+
+            <personaje>
+                <nombre>Lenny Summers</nombre>
+                <genero_c which="hombre"/>
+                <edad>21</edad>
+                <profesion>Forajido</profesion>
+                    <armas>
+                        <arma>Revólver de Cattleman</arma>
+                    </armas>
+                <actor>Harron Atkins</actor>
+            </personaje>
+
+            <personaje>
+                <nombre>Jack Marston</nombre>
+                <genero_c which="hombre"/>
+                <edad>4</edad>
+                <actor in="Niño">Marissa Buccianti</actor>
+                <actor in="Adolescente">Ted Sutherland</actor>
+            </personaje>
+            
+            <personaje>
+                <nombre>Uncle</nombre>
+                <genero_c which="hombre"/>
+                <edad>50</edad>
+                <profesion>Forajido</profesion>
+                <rol>Abuelo</rol>
+                    <armas>
+                        <arma>Revólver Cattleman</arma>
+                        <arma>Winchester de repetición</arma>
+                    </armas>
+                <actor>James McBride</actor>
+                <actor>John O'Creagh</actor>
+            </personaje>
+
+            <personaje>
+                <nombre>Abigail Marston</nombre>
+                <genero_c which="mujer"/>
+                <edad>22</edad>
+                <profesion when="Anteriormente">Prostituta</profesion>
+                <profesion when="Epilogo">Granjera</profesion>
+                <rol>Madre de Jack</rol>
+                    <armas>
+                        <arma>Revólver Cattleman</arma>
+                    </armas>
+                <actor>Cali Elizabeth Moore</actor>
+            </personaje>
+            
+            <personaje>
+                <nombre>Sean Macguire</nombre>
+                <genero_c which="hombre"/>
+                <edad>21</edad>
+                <profesion>Forajido</profesion>
+                <profesion>Proscrito</profesion>
+                <actor>Michael Mellamphy</actor>
+            </personaje>
+
+            <personaje>
+                <nombre>Simon Pearson</nombre>
+                <genero_c which="hombre"/>
+                <edad desc="edad estimada">48</edad>
+                <profesion>Cocinero</profesion>
+                <actor>Jim Santangeli</actor>
+            </personaje>
+
+            <personaje>
+                <nombre>Orville Swanson</nombre>
+                <genero_c which="hombre"/>
+                <edad desc="edad estimada">+40</edad>
+                <profesion>Clérigo</profesion>
+                <actor>Sean Haberle</actor>
+            </personaje>
+            
+            <personaje>
+                <nombre>Josiah Trelawny</nombre>
+                <genero_c which="hombre"/>
+                <edad desc="edad estimada">40-50</edad>
+                <profesion>Ilusionista / Timador</profesion>
+                <actor>Stephen Gevedon</actor>
+            </personaje>
+            
+            <personaje>
+                <nombre>Kieran Duffy</nombre>
+                <genero_c which="hombre"/>
+                <edad>26</edad>
+                <profesion>Forajido</profesion>
+                <actor>Pico Alexander</actor>
+            </personaje>
+
+            <personaje>
+                <nombre>Tilly Jackson</nombre>
+                <genero_c which="mujer"/>
+                <edad desc="edad estimada">19-24</edad>
+                <profesion>Forajido</profesion>
+                <actor>Meeya Davis-Glover</actor>
+            </personaje>
+            
+            <personaje>
+                <nombre>Mary-Beth Gaskill</nombre>
+                <genero_c which="mujer"/>
+                <edad desc="edad estimada">20-30</edad>
+                <profesion>Forajido</profesion>
+                <actor>Samantha Strelitz</actor>
+            </personaje>
+
+            <personaje>
+                <nombre>Molly O'Shea</nombre>
+                <genero_c which="mujer"/>
+                <edad desc="edad estimada">20-30</edad>
+                <actor>Penny O'Brien</actor>
+            </personaje>
+
+            <personaje>
+                <nombre>Susan Grimshaw</nombre>
+                <genero_c which="mujer"/>
+                <edad desc="edad estimada">+45</edad>
+                    <armas>
+                        <arma>Escopeta</arma>
+                    </armas>
+                <actor>Kaili Vernoff</actor>
+            </personaje>
+            
+            <personaje>
+                <nombre>Karen Jones</nombre>
+                <genero_c which="mujer"/>
+                <edad desc="edad estimada">+25</edad>
+                <profesion>Forajido</profesion>
+                    <armas>
+                        <arma>Revólver de Cattleman</arma>
+                        <arma>Carbina de repetición</arma>
+                    </armas>
+                <actor>Jo Armeniox</actor>
+            </personaje>
+            
+            <personaje>
+                <nombre>Leopold Strauss</nombre>
+                <genero_c which="hombre"/>
+                <edad desc="edad estimada">+53</edad>
+                <profesion>Contable</profesion>
+                <actor>Howard Pinhasik</actor>
             </personaje>
         </personajes>
     </videojuego>
+
+<!---->
+
 </videojuegos>
