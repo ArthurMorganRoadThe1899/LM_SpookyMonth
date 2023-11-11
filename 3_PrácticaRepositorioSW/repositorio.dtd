@@ -1,4 +1,3 @@
-<!DOCTYPE repositorios [
         <!ELEMENT repositorios (repositorio*)>
         <!ELEMENT repositorio (nombre, categoria, software_list, compañia?)>
         <!ELEMENT nombre (#PCDATA)>
@@ -25,4 +24,3 @@
         <!ELEMENT compañia (nombre, email, web)>
         <!ELEMENT email (#PCDATA)>
         <!ELEMENT web (#PCDATA)>
-        ]>
