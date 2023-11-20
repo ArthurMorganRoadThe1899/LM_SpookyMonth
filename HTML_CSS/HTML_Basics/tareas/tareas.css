@@ -1,0 +1,17 @@
+.titulo{
+    color: #1b5d21;
+    text-align: center;
+}
+
+body{
+    background-color: #c5dacc;
+}
+
+.indice{
+    background-color: #478388;
+}
+
+.parrafoindex{
+    font-size: 25px;
+    font-weight: bold;
+}
