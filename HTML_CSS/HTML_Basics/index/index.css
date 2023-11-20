@@ -1,0 +1,23 @@
+body{
+    text-align: center;
+    background-color: #abe5d5;
+}
+
+.titulo {
+    color: #1b5d21;
+}
+
+.centerImage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.remarcado {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.pie {
+    font-size: 14px;
+}
