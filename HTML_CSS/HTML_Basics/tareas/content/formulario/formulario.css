@@ -1,0 +1,18 @@
+.titulo{
+    color: #1b5d21;
+    text-align: center;
+}
+
+body{
+    background-color: #c5dacc;
+    color: #1b5d21;
+}
+
+.indice{
+    background-color: #478388;
+}
+
+.submit {
+    color: white;
+    background-color: #1b5d21;
+}

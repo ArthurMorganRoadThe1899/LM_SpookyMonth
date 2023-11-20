@@ -1,0 +1,28 @@
+.titulo {
+    color: #1b5d21;
+}
+table {
+    border: 1px solid;
+    background-color: #6d03ff;
+}
+th {
+    border: 1px solid;
+    border-color: black;
+}
+
+td {
+    border: 1px solid;
+    border-color: black;
+}
+
+.blue {
+    background-color: #72adc5;
+}
+
+.red {
+    background-color: #b46e66;
+}
+
+.green {
+    background-color: #88b67f;
+}
