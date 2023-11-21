@@ -1,9 +1,14 @@
+body {
+    background-color: #c5dacc;
+}
+
 code{
     white-space: pre-wrap;
 }
 
 .code{
-    background-color: #90eaea;
+    background-color: #000000;
+    color: aliceblue;
 }
 
 .space {
