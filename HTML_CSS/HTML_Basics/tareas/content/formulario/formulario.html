@@ -11,11 +11,11 @@
 </head>
 <body>
     <h1 class="titulo">Formulario básico de registro</h1>
-    <form action="" method="post">
-        <p>Nombre: <input type="text" placeholder="Introduce tu nombre"/></p>
-        <p>Apellido: <input type="text" placeholder="Introduce tu apellido"/></p>
-        <p>Contraseña: <input type="password" placeholder="Introduce tu contraseña"/></p>
-        <p>Población: <input list="poblaciones" placeholder="Introduce tu población"></p>
+    <form action="redirection/recibido.php" method="post">
+        <p>Nombre: <input type="text" name="name" placeholder="Introduce tu nombre"/></p>
+        <p>Apellido: <input type="text" name="surname" placeholder="Introduce tu apellido"/></p>
+        <p>Contraseña: <input type="password" name="password" placeholder="Introduce tu contraseña"/></p>
+        <p>Población: <input list="poblaciones" name="pob" placeholder="Introduce tu población"></p>
     <datalist id="poblaciones">
         <option value="La Vall d'Uxio">
         <option value="Galicia">
