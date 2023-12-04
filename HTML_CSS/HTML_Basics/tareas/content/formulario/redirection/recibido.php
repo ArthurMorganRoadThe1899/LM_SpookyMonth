@@ -1,6 +1,6 @@
+<!DOCTYPE html>
 <html>
 <body>
-
 Bienvenido <?php echo $_GET["name"]; ?> <?php echo $_GET['surname'];?>
 <br>
 Tu dirección de correo es: <?php echo $_GET["email"]; ?>
