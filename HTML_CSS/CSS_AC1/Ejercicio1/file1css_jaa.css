@@ -1,0 +1,20 @@
+body {
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+header{
+    color: #ffffff;
+    background-color: #000000;
+    text-align: center;
+    border: #000000 1px solid;
+}
+
+main{
+    color: #000000;
+}
+
+.dolphin {
+    color: #42c943;
+}
