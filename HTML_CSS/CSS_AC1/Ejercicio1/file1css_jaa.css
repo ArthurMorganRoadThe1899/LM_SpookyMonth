@@ -9,12 +9,32 @@ header{
     background-color: #000000;
     text-align: center;
     border: #000000 1px solid;
+
+
 }
 
-main{
+#cT{
+    font-family: "DejaVu Math TeX Gyre";
+}
+
+main {
     color: #000000;
 }
 
-.dolphin {
-    color: #42c943;
+.main_content{
+    background-color: black;
+    color: white;
+}
+
+footer{
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+
+
+}
+
+#foot{
+    color: white;
+    font-size: 13px;
 }
