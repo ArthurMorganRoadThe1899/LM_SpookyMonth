@@ -1,0 +1,55 @@
+body {
+    background-image: url("images/empty_background.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    font-family: Digitalema;
+}
+
+header{
+    color: #000000;
+    background-color: #4efa8a;
+    text-align: center;
+    border: #4efa8a 1px solid;
+}
+
+main{
+    color: #4efa8a
+}
+
+footer{
+    color: #000000;
+    background-color: #4efa8a;
+    text-align: center;
+    border: #4efa8a 1px solid;
+    position: fixed;
+    bottom: 0;
+    left: -2%;
+    width: 2000px;
+}
+
+a:link {
+    color: #4efa8a;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: #4efa8a;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: #4efa8a;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: #4efa8a;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+@font-face {
+    font-family: Digitalema;
+    src: url(digi.woff);
+}
