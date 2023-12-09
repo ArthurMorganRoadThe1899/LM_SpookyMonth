@@ -14,7 +14,7 @@ header{
 }
 
 main{
-    color: #000000;
+    color: #4efa8a
 }
 
 footer{
@@ -30,10 +30,6 @@ footer{
 
 #foot{
     text-align: center;
-}
-
-.dolphin {
-    color: #4efa8a
 }
 
 a:link {
