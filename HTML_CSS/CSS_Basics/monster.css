@@ -1,0 +1,102 @@
+header{
+    text-align: center;
+    background-color: rgb(255, 0, 0);
+    margin-top: -8px;
+    margin-right: -40px;
+    margin-left: -40px;
+    background-attachment: fixed;
+    color: rgb(255, 251, 17);
+    border: 1px solid rgb(0, 0, 0);
+    font-family: huh;
+}
+
+
+body{
+    background-color: rgb(0, 255, 255);
+    color: #fbff00a4;
+}
+
+
+aside{
+    width: 30%;
+    float: right;
+    font-weight: bolder;
+}
+
+#RDR{
+  background-color: rgb(255, 0, 0);
+  color: rgb(9, 255, 0);
+  padding-left: 15px;
+  margin-left: 15px;
+  border: 3px solid rgb(9, 255, 0);
+}
+
+#KH{
+  background-color: rgb(255, 0, 242);
+  color: rgb(255, 0, 0);
+  padding-left: 15px;
+  margin-left: 15px;
+  border: 3px solid rgb(255, 0, 0);
+}
+
+#PKMN{
+  background-color: rgb(115, 255, 0);
+  color: rgb(187, 255, 0);
+  padding-left: 15px;
+  margin-left: 15px;
+  border: 3px solid rgb(187, 255, 0);
+  
+}
+
+.title{
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    font-style: italic;
+}
+
+.squareE{
+    background-color: rgb(17, 0, 255);
+    color: #480e50;
+    border: 5px solid #480e50;
+    margin: 20px;
+    padding: 34px;
+    width: 1200px;
+
+}
+
+#centery{
+  text-align: center;
+  text-decoration: underline;
+  
+}
+
+#eu{
+    background-image:url(images/roxas.jpg);
+    background-attachment: fixed;
+    color: rgb(255, 255, 255);
+    padding-left: 15px;
+    margin-left: 15px;
+    border: 3px solid rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px rgb(251, 255, 0), 0 0 1em rgb(180, 121, 10), 0 0 0.2em rgb(180, 121, 10);
+  }
+
+footer{
+    background-color: #fbff00;
+    text-align: center;
+    border: #fbff00 1px solid;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: -2%;
+    width: 2000px;
+    font-weight: bolder;
+}
+
+img{
+    filter: invert(1);
+  }
+
+  @font-face {
+    font-family: huh;
+    src: url(y.woff);
+}

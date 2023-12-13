@@ -20,6 +20,7 @@ aside{
   color: rgb(182, 182, 102);
   padding-left: 15px;
   margin-left: 15px;
+  border: 3px solid rgb(182, 182, 102);
 }
 
 #KH{
@@ -27,6 +28,7 @@ aside{
   color: rgb(132, 172, 40);
   padding-left: 15px;
   margin-left: 15px;
+  border: 3px solid rgb(132, 172, 40);
 }
 
 #PKMN{
@@ -34,6 +36,8 @@ aside{
   color: rgb(211, 211, 111);
   padding-left: 15px;
   margin-left: 15px;
+  border: 3px solid rgb(211, 211, 111);
+  
 }
 
 .title{
@@ -47,16 +51,31 @@ body{
 }
 
 .squareE{
-    background-color: cadetblue;
+    background-color: rgb(165, 168, 189);
     border: 5px solid rgb(0, 0, 0);
     margin: 20px;
     padding: 34px;
-    width: 300px;
+    width: 1200px;
 
 }
 
+#centery{
+  text-align: center;
+  text-decoration: underline;
+  
+}
+
+#eu{
+  background-image:url(images/gatito.png);
+  background-attachment: fixed;
+  color: rgb(255, 255, 255);
+  padding-left: 15px;
+  margin-left: 15px;
+  border: 3px solid rgb(255, 255, 255);
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
 footer{
-    color: #000000;
     background-color: #573fac;
     text-align: center;
     border: #573fac 1px solid;
