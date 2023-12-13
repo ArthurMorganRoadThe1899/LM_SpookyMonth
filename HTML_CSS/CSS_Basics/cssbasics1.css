@@ -9,10 +9,61 @@ header{
     border: 1px solid rgb(0, 0, 0);
 }
 
-/*#tituloInit{
-    font-
-}*/
+aside{
+    width: 30%;
+    float: right;
+    font-weight: bolder;
+}
+
+#RDR{
+  background-color: rgb(128, 21, 21);
+  color: rgb(182, 182, 102);
+  padding-left: 15px;
+  margin-left: 15px;
+}
+
+#KH{
+  background-color: rgb(0, 0, 0);
+  color: rgb(132, 172, 40);
+  padding-left: 15px;
+  margin-left: 15px;
+}
+
+#PKMN{
+  background-color: rgb(48, 138, 115);
+  color: rgb(211, 211, 111);
+  padding-left: 15px;
+  margin-left: 15px;
+}
+
+.title{
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    font-style: italic;
+}
 
 body{
     background-color: rgb(172, 202, 202);
+}
+
+.squareE{
+    background-color: cadetblue;
+    border: 5px solid rgb(0, 0, 0);
+    margin: 20px;
+    padding: 34px;
+    width: 300px;
+
+}
+
+footer{
+    color: #000000;
+    background-color: #573fac;
+    text-align: center;
+    border: #573fac 1px solid;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: -2%;
+    width: 2000px;
+    font-weight: bolder;
 }
