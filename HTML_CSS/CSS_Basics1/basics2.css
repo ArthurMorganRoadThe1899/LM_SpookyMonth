@@ -1,0 +1,60 @@
+#titulo{
+    color: rgb(25, 175, 130);
+}
+
+#subtitulo{
+    color: blue;
+}
+
+.red{
+    color: rgb(238, 57, 57);
+}
+
+.red:link{
+    color: red;
+}
+
+.blue{
+    color: blue;
+}
+
+.blue:link{
+    color: blue;
+}
+
+
+.purple{
+    color: purple;
+}
+
+.yellow{
+    color: rgb(247, 181, 0);
+}
+
+.green{
+    color: green;
+}
+
+.verde:link{
+    color: green;
+}
+
+#green-pocho-S{
+    color: rgb(110, 129, 65);
+}
+
+#nunc{
+    color: rgb(209, 72, 198);
+}
+
+.destacado{
+    color: rgb(202, 109, 23);
+}
+
+table{
+    border-collapse: collapse;
+}
+
+th, tr, td{
+    border: 1px solid black;
+}
