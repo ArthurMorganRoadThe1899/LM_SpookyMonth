@@ -1,0 +1,56 @@
+body{
+    font-size: 30px;
+}
+
+.px{
+    width: 300px;
+    
+}
+
+.mainP{
+    color: green;
+}
+
+div .resaltat+span{
+    background-color: blue;
+}
+
+.resaltat{
+    width: 300px;
+    background-color: orange;
+}
+
+#segon{
+    width: 300px;
+    display: inline-block;
+}
+
+#tercer{
+    width: 300px;
+    display: inline-block;
+}
+
+#tercer:link{
+    color: black;
+}
+
+#tercer:visited{
+    color: black;
+}
+
+.black:active{
+    color: black;
+}
+
+.black:visited{
+    color: black;
+}
+
+.black:hover{
+    color: black;
+    background-color: red;
+}
+
+.black:active{
+    color: black;
+}
