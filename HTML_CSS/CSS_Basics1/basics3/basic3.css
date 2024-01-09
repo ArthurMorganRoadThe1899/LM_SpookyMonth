@@ -2,6 +2,34 @@ body{
     font-size: 30px;
 }
 
+table{
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td, tr{
+    border: 1px solid black;
+}
+
+.headT{
+    background-color: gray;
+    color: white;
+}
+
+.lightgrayandred{
+    background-color: lightgray;
+    color: red;
+}
+
+.blue{
+    color: blue;
+}
+
+.sub{
+    text-decoration:underline;
+}
+
 .px{
     width: 300px;
     
@@ -11,13 +39,30 @@ body{
     color: green;
 }
 
-div .resaltat+span{
-    background-color: blue;
-}
-
 .resaltat{
     width: 300px;
     background-color: orange;
+}
+
+.resaltatSB{
+    background-color: rgb(106, 106, 243);
+}
+
+.black:active{
+    color: black;
+}
+
+.black:visited{
+    color: black;
+}
+
+.black:hover{
+    color: black;
+    background-color: red;
+}
+
+.black:active{
+    color: black;
 }
 
 #segon{
@@ -35,22 +80,5 @@ div .resaltat+span{
 }
 
 #tercer:visited{
-    color: black;
-}
-
-.black:active{
-    color: black;
-}
-
-.black:visited{
-    color: black;
-}
-
-.black:hover{
-    color: black;
-    background-color: red;
-}
-
-.black:active{
     color: black;
 }
