@@ -1,0 +1,99 @@
+body{
+    background-color: #abe5d5;
+}
+
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td, tr{
+    border: 1px solid black;
+}
+
+.a{
+    border-collapse: collapse;
+}
+
+.gray{
+    background-color: rgb(202, 202, 202);
+    color: rgb(0, 0, 0);
+}
+
+.db{
+    background-color: rgb(208, 224, 184);
+}
+
+.mark{
+    background-color: rgb(189, 130, 238);
+}
+
+.dev{
+    background-color: aquamarine;
+}
+
+.prog{
+    background-color: rgb(245, 137, 98);
+}
+
+.sys{
+    background-color: rgb(202, 66, 66);
+}
+
+.loser{
+    background-color: rgb(167, 115, 101);
+}
+
+.loser2{
+    background-color: rgb(173, 228, 136);
+}
+
+#hour{
+    background-color: gray;
+    color: white;
+}
+
+#l{
+    background-color: rgb(124, 124, 252);
+}
+
+#ma{
+    background-color: rgb(100, 179, 231);
+}
+
+#mi{
+    background-color: rgb(238, 225, 150);
+}
+
+#j{
+    background-color: orange;
+}
+
+#v{
+    background-color: rgb(195, 130, 238);
+}
+
+#P{
+    background-color: rgb(209, 132, 132);
+}
+
+#A{
+    background-color: rgb(219, 150, 150);
+}
+
+#T{
+    background-color: rgb(230, 177, 177);
+}
+
+#I{
+    background-color: rgb(238, 203, 203);
+}
+
+#O{
+    background-color: rgb(252, 230, 230);
+}
+
+#centerplease{
+    text-align: center;
+}
