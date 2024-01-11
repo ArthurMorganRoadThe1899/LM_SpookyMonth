@@ -1,9 +1,14 @@
 body{
-
+    background-color: bisque;
 }
 
 #OGtitle{
     background-color: black;
-    border: 1px solid white;
-    color: white;
+    border: 5px solid white;
+    color: #ffffff;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    
 }
