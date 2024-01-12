@@ -1,5 +1,8 @@
 body{
-    background-color: bisque;
+    background-image:url(images/a.jpg);
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-size: cover;
 }
 
 #OGtitle{
@@ -11,4 +14,36 @@ body{
     margin: 0 auto;
     text-align: center;
     
+}
+
+.title_game{
+    font-style: italic;
+}
+
+.title_game:link{
+    color: azure;
+}
+
+
+#KH:hover{
+    color: yellow;
+    background-color: rgb(45, 149, 197);
+}
+
+#RDD:hover{
+    color: red;
+    background-color: rgb(185, 175, 26);
+}
+
+#ME:hover{
+    color: gray;
+    background-color: red;
+}
+
+.title_game:visited{
+    color: rgb(155, 173, 173);
+}
+
+.title_game:active{
+    color: red;
 }
