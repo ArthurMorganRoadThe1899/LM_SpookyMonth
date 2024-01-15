@@ -1,0 +1,37 @@
+body{
+    text-align: center;
+    background-image: url(../../images/portrait/fondoKH.jpg);
+    background-attachment: fixed;
+}
+
+.pjtxtT{
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+}
+
+.pjtxt{
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#OGtitle{
+    background-image: url(../../images/portrait/firstKH.png);
+    background-attachment: unset;
+    background-repeat: no-repeat;
+    background-position:center top;
+    border: 5px solid rgb(58, 58, 58);
+    color: #37b6ff;
+    font-weight: bold;
+    font-size: 42px;
+    padding: 20px;
+    width: 80%; 
+    margin: 0 auto;
+    text-align: center;
+    font-family: titulomachucho;
+}
+
+@font-face {
+    font-family: titulomachucho;
+    src: url(../../titulomachucho.woff);
+}
