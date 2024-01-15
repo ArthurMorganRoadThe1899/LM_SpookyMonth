@@ -212,7 +212,7 @@
                 <genero_c which="hombre"/>
                 <edad>4</edad>
                 <actor in="Niño">Marissa Buccianti</actor>
-                <actor in="Adolescente">Ted Sutherland</actor>
+                <actor in="Adolescente">Marissa Buccianti</actor>
             </personaje>
             
             <personaje>
