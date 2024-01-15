@@ -21,6 +21,7 @@ body{
     background-image: url(../../images/portrait/firstRDR.jpg);
     background-attachment: unset;
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: 50% 38%;;
     border: 5px solid rgb(58, 58, 58);
     color: #ff0000;
