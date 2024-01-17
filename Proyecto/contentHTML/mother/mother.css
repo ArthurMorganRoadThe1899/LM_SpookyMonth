@@ -39,3 +39,5 @@ body{
     font-family: titulomachucho;
     src: url(../../titulomachucho.woff);
 }
+
+audio { display:none;}
