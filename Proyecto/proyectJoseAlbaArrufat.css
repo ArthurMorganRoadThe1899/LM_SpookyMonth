@@ -1,5 +1,5 @@
 body{
-    background-image:url(images/a.jpg);
+    background-image:url(images/nier-automata-sword-w.png);
     background-repeat: no-repeat;
     background-attachment:scroll;
     background-size: cover;
@@ -13,11 +13,14 @@ body{
     width: 80%;
     margin: 0 auto;
     text-align: center;
+    font-family: huh;
+    font-size: 50px;
     
 }
 
 .title_game{
     font-style: italic;
+    text-align: center;
 }
 
 .title_game:link{
@@ -46,4 +49,9 @@ body{
 
 .title_game:active{
     color: red;
+}
+
+@font-face {
+    font-family: huh;
+    src: url(titulomachucho.woff);
 }

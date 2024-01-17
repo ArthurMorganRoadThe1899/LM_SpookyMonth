@@ -1,0 +1,41 @@
+body{
+    text-align: center;
+    background-image: url(../../images/portrait/mother3background.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pjtxtT{
+    color: rgb(137, 6, 197);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+}
+
+.pjtxt{
+    color: rgb(137, 6, 197);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#OGtitle{
+    background-image: url(../../images/portrait/firstmother3.jpg);
+    background-attachment: unset;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center top;
+    background-position: 50% 55%;
+    border: 5px solid rgb(58, 58, 58);
+    color: #ff4800;
+    font-weight: bold;
+    font-size: 50px;
+    padding: 20px;
+    width: 80%; 
+    margin: 0 auto;
+    text-align: center;
+    font-family: titulomachucho;
+}
+
+@font-face {
+    font-family: titulomachucho;
+    src: url(../../titulomachucho.woff);
+}
