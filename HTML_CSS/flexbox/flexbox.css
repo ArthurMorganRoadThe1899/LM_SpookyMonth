@@ -23,8 +23,10 @@ body{
   justify-content: center;
   /* MÁGICA FLEX*/
   display: flex; /*Con esto adaptas al tamaño de la pantalla*/
-  /*flex-direction: row;*/ /*Con esto, haces que todo el contenido se alinee en forma de fila*/
+  /*flex-direction: row-reverse;*/ /*Con esto, haces que todo el contenido se alinee en forma de fila*/
   /*flex-direction: column;*/ /*Con esto, haces que todo el contenido se alinee en forma de columna*/
   /*flex-wrap: wrap;*/ /*Acomodar todo el contenido de dentro para que se vea*/
+
+  /*flex-flow: row wrap;*/ /*Esto hace la función de flex-direction y flex-wrap. para omitirlos y eso */
   
 }
