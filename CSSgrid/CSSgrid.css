@@ -4,7 +4,6 @@
 	box-sizing: border-box;
 }
 
-html,
 body {
 	font-family: 'a';
 	background: #25282f;
@@ -65,7 +64,7 @@ p {
 	background-size: cover;
 }
 
-.b:nth-of-type(2):hover { /*scale || transition */
+.b:nth-of-type(2):hover {
 	scale: 102%;
 	grid-row: 1/6;
 	grid-column: 2/4;
@@ -80,9 +79,28 @@ p {
 .b:nth-of-type(3) {
 	grid-row: 1;
 	grid-column: 4/7;
+	background: linear-gradient(
+		rgba(57, 98, 209, 0.5),
+		rgba(57, 98, 209, 0.5)
+	),
+	url(images/munny.png);
+	background-size: cover;	
 
 }
-/*255, 93, 93, 0.5*/
+
+.b:nth-of-type(3):hover {
+	scale: 102%;
+	grid-row: 1;
+	grid-column: 4/7;
+	background: linear-gradient(
+		rgba(44, 77, 167, 0.5),
+		rgba(44, 77, 167, 0.5)
+	),
+	url(images/munny.png);
+	background-size: cover;	
+
+}
+
 .b:nth-of-type(4) {
 	grid-row: 2/6;
 	grid-column: 1;
@@ -146,31 +164,79 @@ p {
 .b:nth-of-type(6) {
 	grid-row: 5/6;
 	grid-column: 4;
+	background: linear-gradient(
+		rgba(255, 255, 255, 0.5),
+		rgba(255, 255, 255, 0.5)
+	),
+	url(images/puercareto.png);
+	background-size: cover;
+	background-position: top;
 }
+
+.b:nth-of-type(6):hover {
+	scale: 102%;
+	grid-row: 5/6;
+	grid-column: 4;
+	background: linear-gradient(
+		rgba(224, 224, 224, 0.5),
+		rgba(224, 224, 224, 0.5)
+	),
+	url(images/puercareto.png);
+	background-size: cover;
+	background-position: top;
+}
+
 .b:nth-of-type(7) {
 	grid-row: 5/6;
 	grid-column: 5;
+	background: linear-gradient(
+		rgba(57, 98, 209, 0.5),
+		rgba(57, 98, 209, 0.5)
+	),
+	url(images/kieran.png);
+	background-size: cover;
+	background-position: 50% 20%;
+	
 }
+
+.b:nth-of-type(7):hover {
+	scale: 102%;
+	grid-row: 5/6;
+	grid-column: 5;
+	background: linear-gradient(
+		rgba(44, 77, 167, 0.5),
+		rgba(44, 77, 167, 0.5)
+	),
+	url(images/kieran.png);
+	background-size: cover;
+	background-position: 50% 20%;
+}
+
 .b:nth-of-type(8) {
 	grid-row: 5/6;
 	grid-column: 6;
+	background: linear-gradient(
+		rgba(255, 191, 0, 0.3),
+		rgba(255, 191, 0, 0.3)
+	),
+	url(images/johnpollon.jpg);
+	background-size: cover;
+	background-position: center;
 }
 
-.red {
-	background: #b93e37;
-}
-.blue {
-	background: #2952ba;
-}
-.goku {
-	background: #d1ac39;
+.b:nth-of-type(8):hover {
+	scale: 102%;
+	grid-row: 5/6;
+	grid-column: 6;
+	background: linear-gradient(
+		rgba(209,172,57, 0.5),
+		rgba(209,172,57, 0.5)
+	),
+	url(images/johnpollon.jpg);
+	background-size: cover;
+	background-position: center;
 }
 
-.cum {
-	background: #fff;
-}
-
-/* Mobile */
 @media (max-width: 768px) {
 	#tumama {
 		grid-template-columns: 1fr;
