@@ -1,0 +1,16 @@
+body{
+    background-color: grey;
+}
+
+.img-fluid{
+    max-width:100%;
+    height:auto
+}
+
+.mx-auto{
+    margin-right:auto
+}
+
+.d-block{
+    display:block
+}
