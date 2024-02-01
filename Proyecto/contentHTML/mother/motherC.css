@@ -17,54 +17,16 @@ body{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.flexo{
-    flex-wrap: wrap;
+.conteneor{
+    display: flex;
     align-items: center;
+    justify-content: center;
 }
 
-.lucas{
-
+div{
+    margin: 5px;
 }
 
-.claus{
-
-}
-
-.flint{
-
-}
-
-.hinawa{
-
-}
-
-.boney{
-
-}
-
-.kumatora{
-
-}
-
-.duster{
-
-}
-
-.wess{
-
-}
-
-.salsa{
-
-}
-
-.samba{
-
-}
-
-.mrsaturn{
-    
-}
 #OGtitle{
     background-image: url(../../images/portrait/firstmother3.jpg);
     background-attachment: unset;
