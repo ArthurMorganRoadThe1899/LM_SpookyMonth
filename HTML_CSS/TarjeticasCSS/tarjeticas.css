@@ -1,7 +1,11 @@
 :root {
-    /* Color palette  */
+    /* Color palette  */ 
     --default: #999999;
     --red: #E74C3C;
+    --reder1: #B22222;
+    --reder2: #DC143C;
+    --reder3: #FF0000;
+    --baby: #FF00FF;
     --blue: #3498DB;
     --purple: #9B59B6;
     --yellow: #FEB506;
@@ -13,7 +17,7 @@
     
     /* Card color */
     --cartica: #fafafa;
-    --tengo_necrosis: #d400ff;
+    --tengo_necrosis: #2bff00;
 }
 
 *{
@@ -39,12 +43,12 @@ h2{
   margin-bottom: 10px;
 }
 
-.container{
+.contenesta{
   padding: 0px 20px;
   height: 100%;
 }
 
-.card{
+.yugi{
   position: relative;
   background-color: var(--cartica);
   display: inline-block;
@@ -55,43 +59,68 @@ h2{
   margin-bottom: 20px;
 }
 
-.card.default{
+.yugi.default{
   border-bottom: 5px solid var(--default);
 }
 
-.card.red{
+.yugi.red{
   border-bottom: 5px solid var(--red);
 }
 
-.card.blue{
+.yugi.redder1{
+  border-bottom: 5px solid var(--reder1);
+
+}
+
+.yugi.redder2{
+  border-bottom: 5px solid var(--reder1);
+
+}
+
+.yugi.redder3{
+  border-bottom: 5px solid var(--reder1);
+
+}
+
+.yugi.redder4{
+  border-bottom: 5px solid var(--reder1);
+
+}
+
+.yugi.baby{
+  border-bottom: 5px solid var(--reder1);
+
+}
+
+.yugi.blue{
   border-bottom: 5px solid var(--blue);
 }
 
-.card.purple{
+.yugi.purple{
   border-bottom: 5px solid var(--purple);
 }
 
-.card.yellow{
+.yugi.yellow{
   border-bottom: 5px solid var(--yellow);
 }
 
-.card.green{
+.yugi.green{
   border-bottom: 5px solid var(--green);
 }
 
-.card.parocardiaco {
+.yugi.parocardiaco {
   transition: 0.5s;
 }
 
-.card.parocardiaco:hover{
+.yugi.parocardiaco:hover{
   background-color: var(--bg-cartica);
 }
 
-.card.parocardiaco:hover {
+.yugi.parocardiaco:hover {
   transform: scale(1.05);
 }
 
-.card.animate{
+.yugi.animate{
     border-bottom: none;
 }
 
@@ -100,15 +129,15 @@ h2{
     font-family: fantasy;
 }
 
-.card:hover{
+.yugi:hover{
   background-color: var(--tengo_necrosis)
 }
 
-.card.animate:hover{
+.yugi.animate:hover{
   background-color: var(--bg-cartica);
 }
 
-.card.animate:before{
+.yugi.animate:before{
   content: "";
   position: absolute;
   bottom: 0px;
@@ -119,30 +148,30 @@ h2{
   transition: 0.5s;
 }
 
-.card.animate:hover:before{
+.yugi.animate:hover:before{
   width: 100%;
 }
 
-.card.animate.default:before{
+.yugi.animate.default:before{
   background-color: var(--default)
 }
 
-.card.animate.blue:before{
+.yugi.animate.blue:before{
   background-color: var(--blue)
 }
 
-.card.animate.yellow:before{
+.yugi.animate.yellow:before{
   background-color: var(--yellow)
 }
 
-.card.animate.purple:before{
+.yugi.animate.purple:before{
   background-color: var(--purple)
 }
 
-.card.animate.green:before{
+.yugi.animate.green:before{
   background-color: var(--green)
 }
 
-.card.animate.red:before{
+.yugi.animate.red:before{
   background-color: var(--red)
 }
