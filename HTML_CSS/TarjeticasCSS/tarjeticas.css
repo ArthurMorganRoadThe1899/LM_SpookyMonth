@@ -1,10 +1,11 @@
 :root {
     /* Color palette  */ 
     --default: #999999;
-    --red: #E74C3C;
+    --red: #5a2019;
     --reder1: #B22222;
     --reder2: #DC143C;
     --reder3: #FF0000;
+    --reder4: #ec6161;
     --baby: #FF00FF;
     --blue: #3498DB;
     --purple: #9B59B6;
@@ -67,28 +68,28 @@ h2{
   border-bottom: 5px solid var(--red);
 }
 
-.yugi.redder1{
+.yugi.reder1{
   border-bottom: 5px solid var(--reder1);
 
 }
 
-.yugi.redder2{
-  border-bottom: 5px solid var(--reder1);
+.yugi.reder2{
+  border-bottom: 5px solid var(--reder2);
 
 }
 
-.yugi.redder3{
-  border-bottom: 5px solid var(--reder1);
+.yugi.reder3{
+  border-bottom: 5px solid var(--reder3);
 
 }
 
-.yugi.redder4{
-  border-bottom: 5px solid var(--reder1);
+.yugi.reder4{
+  border-bottom: 5px solid var(--reder4);
 
 }
 
 .yugi.baby{
-  border-bottom: 5px solid var(--reder1);
+  border-bottom: 5px solid var(--baby);
 
 }
 
@@ -174,4 +175,24 @@ h2{
 
 .yugi.animate.red:before{
   background-color: var(--red)
+}
+
+.yugi.animate.reder1:before{
+  background-color: var(--reder1)
+}
+
+.yugi.animate.reder2:before{
+  background-color: var(--reder2)
+}
+
+.yugi.animate.reder3:before{
+  background-color: var(--reder3)
+}
+
+.yugi.animate.reder4:before{
+  background-color: var(--reder4)
+}
+
+.yugi.animate.baby:before{
+  background-color: var(--baby)
 }
