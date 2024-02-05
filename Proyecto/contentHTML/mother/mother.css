@@ -14,6 +14,12 @@ a {
     width: 50px;
     text-decoration: none;
     margin: 5px;
+    color: rgb(92, 92, 92);
+    transition: ease-in;
+}
+
+a:hover{
+    color: rgb(70, 56, 30);
 }
 
 .al{
@@ -22,16 +28,19 @@ a {
 }
   
 nav {
-    width: 539px;
+    width: auto;
     padding: 5px;
     border: 1px solid black;
+    margin: 5px;
 }
 
 nav.decoration{
-    background-color: #37b6ff;
+    background-color: #ff0000;
     text-decoration: none;
-    border: 5px solid rgb(223, 230, 155);
+    border: 5px solid rgb(182, 182, 182);
     border-radius: 50px;
+    margin: 10px;
+    transition: ease-in;
 }
 
 .pjtxtT{
