@@ -18,27 +18,8 @@ body{
 }
 
 .conteneor{
-    display: flex;
-    align-items: center;
+    display:flex;
     justify-content: center;
-}
-
-div.ConS {
-    background-color: #3333333f;
-    overflow: auto;
-    white-space: nowrap;
-    padding: 10px;
-    height: 500px;
-}
-
-div.ConT{
-    flex: 1;
-    min-width: 300px;
-    margin: 10px;
-}
-
-div{
-    margin: 5px;
 }
 
 #OGtitle{
