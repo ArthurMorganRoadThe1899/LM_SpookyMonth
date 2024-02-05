@@ -34,6 +34,10 @@ img{
     transition: background-color 0.3s ease;
 }
 
+.boton:hover{
+    background-color: #8a3228;
+}
+
 .portafolio{
     display: flex;
     flex-wrap: wrap;
