@@ -1,3 +1,7 @@
+body{
+    background-color: #e0e0e0;
+}
+
 p{
     color: #555;
     line-height: 1.5;
@@ -12,6 +16,11 @@ img{
     height: auto;
     border-radius: 8px;
     margin-bottom: 15px;
+}
+
+.i{
+    display: flex;
+    justify-content: center;
 }
 
 .boton{
@@ -32,7 +41,7 @@ img{
     align-items: flex-start;
 }
 
-.projecto{
+.proyecto{
     flex:1;
     min-width: 300px;
     text-align: center;
@@ -40,4 +49,17 @@ img{
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 5px;
+}
+
+#containT{
+    display: flex;
+    width: 350px;
+    color: #a8cfe9;
+    border: 2px solid #a8cfe9;
+    background-color: black;
+}
+
+div#containT {
+    justify-content: center;
 }
