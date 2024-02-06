@@ -10,6 +10,30 @@ a {
     text-decoration: none;
     margin: 5px;
 }
+
+footer{
+    background-color: #7474743b;
+    text-align: center;
+    border: #080024 1px solid;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: -2%;
+    width: 2000px;
+    font-weight: bolder;
+}
+
+footer a:link{
+    color: rgb(202, 253, 253);
+}
+
+footer a:visited{
+    color: rgb(202, 253, 253);
+}
+
+footer a:hover{
+    color: rgb(153, 184, 184);
+}
   
 nav {
     width: 339px;
@@ -31,7 +55,7 @@ nav,
     margin: 0 auto;
     text-align: center;
 }
- 
+
 .scroll-conteneor {
     width: 700px;
     height: 700px;

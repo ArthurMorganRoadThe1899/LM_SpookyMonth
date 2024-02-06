@@ -22,6 +22,26 @@ a:hover{
     color: rgb(70, 56, 30);
 }
 
+footer{
+    background-color: #7474743b;
+    text-align: center;
+    border: #080024 1px solid;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: -2%;
+    width: 2000px;
+    font-weight: bolder;
+}
+
+footer a:link{
+    color: rgb(97, 97, 97);
+}
+
+footer a:visited{
+    color: rgb(97, 97, 97);
+}
+
 .al{
     display: flex;
     justify-content: center;
