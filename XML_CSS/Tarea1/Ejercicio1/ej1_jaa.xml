@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="ej1_jaa.css"?>
+
+<persona>
+    <nombre>Jose</nombre>
+    <apellidos>Alba Arrufat</apellidos>
+    <edad>20</edad>
+    <intereses>
+        <interes>Jugar a videojuegos</interes>
+        <s> | </s>
+        <interes>Cuidar de mis perritos</interes>
+        <s> | </s>
+        <interes>Ver a mis primitos</interes>
+    </intereses>
+</persona>

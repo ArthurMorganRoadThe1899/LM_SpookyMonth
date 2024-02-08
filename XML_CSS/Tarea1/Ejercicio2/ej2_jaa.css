@@ -1,0 +1,26 @@
+libreria{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+libreria libro{
+    display: block;
+    border: 2px solid black;
+    margin: 20px;
+    text-align: center;
+    width: 790px;
+}
+
+libro titulo{
+    font-size: large;
+    font-weight: bold;
+}
+
+libro autor{
+    color: green;
+}
+
+libro fecha-pub{
+    font-style: italic;
+}

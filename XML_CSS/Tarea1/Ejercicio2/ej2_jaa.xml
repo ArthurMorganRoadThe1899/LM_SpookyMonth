@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="ej2_jaa.css"?>
+
+<libreria>
+    
+    <libro>
+        <titulo>Pepe, el espiritu de la tierra</titulo>
+        <autor>Alberto</autor>
+        <fecha-pub>2023</fecha-pub>
+    </libro>
+
+    <libro>
+        <titulo>Baten Kaitos, las alas eternas y el océano perdido</titulo>
+        <autor>Angela</autor>
+        <fecha-pub>2005</fecha-pub>
+    </libro>
+
+    <libro>
+        <titulo>El elfo paliducho</titulo>
+        <autor>Astarion</autor>
+        <fecha-pub>2024</fecha-pub>
+    </libro>
+
+    <libro>
+        <titulo>Hurt By The West</titulo>
+        <autor>Arthur Morgan</autor>
+        <fecha-pub>1885</fecha-pub>
+    </libro>
+
+    <libro>
+        <titulo>Flee To The River</titulo>
+        <autor>William Afton</autor>
+        <fecha-pub>1978</fecha-pub>
+    </libro>
+    
+    <libro>
+        <titulo>ARCANINE :(</titulo>
+        <autor>Martiluski07</autor>
+        <fecha-pub>2022</fecha-pub>
+    </libro>
+
+    <libro>
+        <titulo>Aegislash... junto a Arcanine eres mi peor enemigo</titulo>
+        <autor>qwsdd1</autor>
+        <fecha-pub>2022</fecha-pub>
+    </libro>
+
+    <libro>
+        <titulo>Las impresionantes crónicas de Babu, el ser definitivo</titulo>
+        <autor>Javier | Babu</autor>
+        <fecha-pub>2024</fecha-pub>
+    </libro>
+
+    <libro>
+        <titulo>No tengo concetración</titulo>
+        <autor>JK_egg</autor>
+        <fecha-pub>2018</fecha-pub>
+    </libro>
+
+    <libro>
+        <titulo>Jaume, si me apruebas no lo digo, lo juro</titulo>
+        <autor>Aporte anónimo</autor>
+        <fecha-pub>2024</fecha-pub>
+    </libro>
+
+    <libro>
+        <titulo>Machete</titulo>
+        <autor>Pedro Adán Trelles</autor>
+        <fecha-pub>2023</fecha-pub>
+    </libro>
+
+    <libro>
+        <titulo>Adios, Machete</titulo>
+        <autor>Alexis Ariel Lencias</autor>
+        <fecha-pub>2024</fecha-pub>
+    </libro>
+
+    <libro>
+        <titulo>DEVUELVEME A MACHETEEEE</titulo>
+        <autor>JK_egg</autor>
+        <fecha-pub>2024</fecha-pub>
+    </libro>
+
+    <libro>
+        <titulo>La trílogia de Machete</titulo>
+        <autor>Editorial - BG3</autor>
+        <fecha-pub>2024</fecha-pub>
+    </libro>
+
+</libreria>
