@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet href="file.css" type="ej3_jaa.css"?>
+<?xml-stylesheet href="ej3_jaa.css"?>
 
     <lista>
+        <c>
+            <title>Lista de cafes</title>
+        </c>
         <cafes>
-            
+            <cafe>Café Negro</cafe>
+            <cafe>Café con leche</cafe>
+            <cafe>Café con azucar</cafe>
         </cafes>
+
+            <s/>
+        <c>
+            <title>Lista de postres</title>
+        </c>    
         <postres>
-            
+            <postre>Helado</postre>
+            <postre>Frutas</postre>
+                <fruta>Fresas</fruta>
+                <fruta>Melón</fruta>
+                <fruta>Pera</fruta>
+            <postre>Bizcocho de naranja</postre>
         </postres>
     </lista>

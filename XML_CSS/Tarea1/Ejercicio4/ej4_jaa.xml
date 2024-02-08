@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="ej4_jaa.css"?>
+
+    <tabla>
+        <titulo>Datos del producto</titulo>
+
+        <a>
+        <columna>
+            <celda>Producto</celda>
+            <celda>Cantidad</celda>
+            <celda>Precio total </celda>
+        </columna>
+
+        <columna>
+            <celda>Portatil</celda>
+            <celda>2</celda>
+            <celda><p>800€</p></celda>
+        </columna>
+
+        <columna>
+            <celda>Impresora</celda>
+            <celda>1</celda>
+            <celda><p>200€</p></celda>
+        </columna>
+
+        <columna>
+            <celda>Teclado y ratón</celda>
+            <celda>3</celda>
+            <celda><p>50€</p></celda>
+        </columna>
+    </a>
+
+    </tabla>

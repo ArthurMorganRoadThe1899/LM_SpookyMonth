@@ -1,0 +1,26 @@
+a{
+    margin-left: 3px;
+}
+
+columna celda p{
+    color: green;
+}
+
+titulo{
+    display: block;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 3px;
+    margin-left: 1px;
+}
+
+columna{
+    display: table-row;
+}
+
+celda {
+    display: table-cell;
+    padding: 5px;
+    border: 1px solid #ccc;
+    
+}

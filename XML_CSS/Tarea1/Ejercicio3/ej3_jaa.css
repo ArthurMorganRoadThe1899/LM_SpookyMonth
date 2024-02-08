@@ -1,11 +1,61 @@
 lista{
+    background-color: rgb(190, 216, 207);
+}
 
+title{
+    display: block;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 15px;
+    margin-left: 1%;
+    text-decoration: underline;
+}
+
+c{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+s{
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 1px;
 }
 
 cafes{
-
+    display: block;
+    background-color: aliceblue;
+    border: 1px solid black;
 }
 
 postres{
+    display: block;
+    background-color: aliceblue;
+    border: 1px solid black;
     
+}
+
+cafes cafe{
+    display: list-item;
+    list-style-type: disc;
+    margin-bottom: 12px;
+    margin-left: 2em;
+}
+
+postres postre{
+    display: list-item;
+    list-style-type: disc;
+    margin-bottom: 12px;
+    margin-left: 2em;
+}
+
+fruta{
+    display: list-item;
+    list-style-type: circle;
+    margin-bottom: 5px;
+    margin-left: 3em;
 }

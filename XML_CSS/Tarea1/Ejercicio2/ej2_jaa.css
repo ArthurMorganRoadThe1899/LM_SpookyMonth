@@ -2,14 +2,16 @@ libreria{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    background-color: rgb(146, 135, 135);
 }
 
 libreria libro{
     display: block;
+    background-color: azure;
     border: 2px solid black;
     margin: 20px;
     text-align: center;
-    width: 790px;
+    width: 750px;
 }
 
 libro titulo{
