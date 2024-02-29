@@ -12,14 +12,14 @@
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script>
-        // Nuevo: obtener el identificador único del artículo
+       
             var itemId = $(this).find('id').text();
-        // Abrir enlace
+        
             html += '<h2><a href="#" onclick="abrirArticulo(\'' + itemId + '\')">' + title +
             '</a></h2>';
-        // Nueva función para abrir el artículo correspondiente en index.html
+        
             function abrirArticulo(itemId) {
-        // Redirige a la página index.html y agrega el identificador al final del enlace
+        
             window.location.href = 'index.html#' + itemId;
 }
     </script>
