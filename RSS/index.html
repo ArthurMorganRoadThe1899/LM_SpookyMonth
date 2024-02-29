@@ -33,7 +33,6 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script>
         var rssFeedUrl = 'feed.xml';
-
         function cargarFeedRSS() {
             $.get(rssFeedUrl, function (data) {
                 var items = $(data).find('item');

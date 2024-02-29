@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rss.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Placeholder</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas maxime, asperiores fuga odit ut dolor ducimus corrupti vero mollitia! Cupiditate harum animi reprehenderit quam eveniet facilis velit. Asperiores, facilis ducimus.</p>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        // Nuevo: obtener el identificador único del artículo
+            var itemId = $(this).find('id').text();
+        // Abrir enlace
+            html += '<h2><a href="#" onclick="abrirArticulo(\'' + itemId + '\')">' + title +
+            '</a></h2>';
+        // Nueva función para abrir el artículo correspondiente en index.html
+            function abrirArticulo(itemId) {
+        // Redirige a la página index.html y agrega el identificador al final del enlace
+            window.location.href = 'index.html#' + itemId;
+}
+    </script>
+    
+</body>
+</html>
