@@ -1,8 +1,6 @@
 ## Enunciat i Solucions
 
-
 ---
-
 
 **Exercici 1: Nom de la Universitat**
 - Universitat Fondeguilla
@@ -105,8 +103,7 @@
 - c02
 <br>
     * Respuesta:
-    /
-    <!--Este también funciona, pero solo en xpath 2.0-->
+    <!--Este funciona, pero solo en xpath 2.0-->
     distinct-values(/universitat/alumnes/alumne/estudis/carrera/@codi)
 <br>
 
@@ -115,11 +112,16 @@
 - Pérez Romero, Fernando
 <br>
     * Respuesta:
-    
+    /universitat/alumnes/alumne[@beca='si']/nom/text()
+<br>
 
 **Exercici 13: Noms de les assignatures de la titulació c04**
 - Pedagogia
 - Tecnologia dels Aliments
+<br>
+    * Respuesta:
+    /universitat/assignatures/assignatura[@titulacio='c04']/nom/text()
+<br>
 
 **Exercici 14: Noms deles assignatures de segon trimestre**
 - Enginyeria del Software
@@ -127,6 +129,10 @@
 - Didàctica
 - Tecnologia dels Aliments
 - Història del Pensament
+<br>
+    * Respuesta:
+    /universitat/assignatures/assignatura[trimestre=2]/nom/text()
+<br>
 
 **Exercici 15: Noms de les assignatures que no tenen 4 crèdits teòrics**
 - Ofimàtica
@@ -134,4 +140,7 @@
 - Tecnologia dels Aliments
 - Bases de Dades
 - Història del Pensament
+<br>
+    * Respuesta:
+    /universitat/assignatures/assignatura[credits_teorics!=4]/nom/text()
 
