@@ -1,0 +1,19 @@
+{
+    "pelicula": {
+        "titulo": "Oso Yogui, la película",
+        "director": "Eric Brevig",
+        "anyoEstreno": 2010,
+        "genero": ["Comedia"],
+        "actores": ["Dan Aykroyd", "Tom Cavanagh", " Anna Faris", "T. J. Miller", "Justin Timberlake", "Josh Robert Thompson", "Andrew Daly", "Nate Corddry", "David Stott", "Patricia Aldersley", "Tim McLachlan", "Barry Duffield", "Greg Johnson", "Raymond Ochoa", "Isabella Acres", "Will Shadley", "Michelle Ruff", "Shane Baumel", "Seth Morris", "Kirk Baily", "Steve Alterman", "J. Lamont Pope", "Luisa Leschin", "Jennessa Rose", "Greg Baglia", "Matt Gillanders", "Dean Knowsley", "Stephen Apostolina", "Emily Hahn", "Stephen Stanton", "Will Wallace", "Christine Taylor", "Vladimir Antonik", "Anna Dawson", "Richard Darbois", "Oreste Baldini", "Diomid Vinogradov", "Vasily Dakhnenko", "Guillaume Lebon", "Emiliano Coltorti", "Olga Golovanova", "Joachim Bergström", "Axel Malzacher"]
+    },
+
+    "pelicula": {
+        "titulo": "Five Night's at Freddy's the movie",
+        "director": "Emma Tammi",
+        "anyoEstreno": 2023,    
+        "genero": ["Comedia", "Terror", "Aventuras"],
+        "actores": ["Josh Hutcherson", "Matthew Lillard"]
+    }
+
+    
+}

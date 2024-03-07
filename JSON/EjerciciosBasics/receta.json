@@ -1,0 +1,6 @@
+{
+    "recetas":[ 
+        { "nombre": "Bocadillo de tortilla", "tiempoPreparacion": 3, "igrendientes": ["Huevo", "Pan"], "pasosPreparacion": ["1. Poner el huevo en la sarten y hacer una tortilla", "2. Cortar completamente un pan con un cuchillo horizontalmente", "3. Meter la tortilla dentro del pan", "4. Disfrutar de un buen bocadillo de tortilla", "5. Repetir desde paso 1"]},
+        {"nombre": "Hamburguesa", "tiempoPreparacion": 3, "igrendientes": ["algún ser vivo"], "pasosPreparacion": ["1. Paso1", "2. Paso2"]}
+    ]  
+}

@@ -1,0 +1,6 @@
+{
+    "pedidos":[ 
+        {"numero": 1 , "fecha": "2-2-2022" , "productos":["Optimus Prime escala 1.0", 245], "PagoTotal": 260},
+        {"numero": 2 , "fecha": "3-3-2023" , "productos":["Minirogue", 30], "PagoTotal":  35}
+    ]
+}
