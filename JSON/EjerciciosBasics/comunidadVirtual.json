@@ -1,9 +1,14 @@
 {
     "comunidad": {
-        "nombreComunidad": "",
+        "nombreComunidad": "Lasaña Community",
         "cantidadDeUsuarios": 346,
         "activa": false,
-        "temasDestacados": []
+        "temasDestacados": ["placeholder", 0, false]
+    },
+    "comunidad": {
+        "nombreComunidad": "Big Mac Community",
+        "cantidadDeUsuarios": 123,
+        "activa": false,
+        "temasDestacados": ["placeholder", 0, false]
     }
-
 }

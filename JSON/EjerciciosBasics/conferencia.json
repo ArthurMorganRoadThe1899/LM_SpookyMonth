@@ -1,0 +1,19 @@
+{
+    "conferencia": {
+        "nombre": "La conferencia de Luis Miguel y Antonio",
+        "ponet": {
+            "ponente": ["Luis Miguel", "Antonio"],
+            "companyia": "Las maravillas del uso de los frameworks"
+        },
+        "asistentes": ["Jose Buils", "Rubén", "Pepe"]
+    },
+    
+    "conferencia": {
+        "nombre": "Porque la tierra tiene forma de velociraptor",
+        "ponet": {
+            "ponente": "Deo",
+            "companyia": "Alcohólicos Anonimos S.A"
+        },
+        "asistentes": ["Shin", "Braian", "Luciano", "Alexander", "Javier"]
+    }
+}
