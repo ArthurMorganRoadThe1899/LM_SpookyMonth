@@ -1,0 +1,25 @@
+{
+    "equipo": {
+        "nombre": "Kieran Fury",
+        "colorEquipacion": "Rojo",
+        "estadio": "Zona cubica",
+        "urlWebOficial": "https://www.wikidex.net/wiki/Academia_Ar%C3%A1ndano",
+        "entrenador": "Turo",
+        "jugadores": {
+            "jugador": {
+                "Base": "Kieran",
+                "Base": "Amarys",
+                "Base": "Arven",
+                "Alero": "Florian",
+                "Alero": "Penny",
+                "Alero": "Carmine",
+                "Alero": "Lacey",
+                "Pivote": "Juliana",
+                "Pivote": "Némona",                 
+                "Pivote": "Drayton",                                 
+                "Pivote": "Crispin"
+        }
+    },
+        "equipoHistorico": true
+    }
+}
