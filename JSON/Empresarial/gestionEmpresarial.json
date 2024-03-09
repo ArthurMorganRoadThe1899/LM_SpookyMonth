@@ -1,0 +1,64 @@
+{
+    "empresa": {
+        "empleados":{
+            "empleado":{
+                "nombres": "Jose Miguel",
+                "fechasNacimiento": 1993,
+                "codeEmpleado": "A1",
+                "projectos": ["123A", "456B"]
+            },
+            "empleado":{
+                "nombres": "Alberto Castells Moreno",
+                "fechasNacimiento": 2002,
+                "codeEmpleado": "B2",
+                "projectos": ["456B", "789C"]
+            }
+        },
+
+
+        "projectos":{
+        
+            "projecto":{
+                "nombreProjecto": "Migrar dominio de correo",
+                "codeProjecto": "123A",
+                "fechaDeInicio": "2-2-2022",
+                "fechaPrevistaFinalizacion": "2-5-2022",
+                "empleadosAsignados": ["A1"]
+            },
+
+            "projecto":{
+                "nombreProjecto": "Obtener dominios para una web",
+                "codeProjecto": "456B",
+                "fechaDeInicio": "4-11-2021",
+                "fechaPrevistaFinalizacion": "12-6-2022",
+                "empleadosAsignados": ["A1", "B2"]
+            },
+
+            "projecto":{
+                "nombreProjecto": "Laravel en web",
+                "codeProjecto": "789C",
+                "fechaDeInicio": "4-5-2022",
+                "fechaPrevistaFinalizacion": "16-5-2022",
+                "empleadosAsignados": ["B2"]
+            }
+    },
+
+        "departamentos": {
+            "departamento":{
+                "nombreDepartamento": "Departamento de las galletas",
+                "codeDepartamento": "A135B",
+                "descripcion": "Un departamento normal, pero le pusimos 'Departamento de las galletas' porque un día a Miguel se le cayo su pack de galletas María por todo el suelo, así conmemoramos ese evento (y de veces nos metemos con el)"
+            },
+
+            "departamento":{
+                "nombreDepartamento": "Great vegetables",
+                "codeDepartamento": "C680D",
+                "descripcion": "Alberto estaba jugando al persona 4, hasta eso entendí porque le pusieron ese nombre"
+            }
+            
+        }
+
+
+
+    }
+}
