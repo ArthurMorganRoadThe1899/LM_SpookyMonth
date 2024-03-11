@@ -9,7 +9,7 @@ Regex per a la cadena exadecimal: "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})?$"
 
 - **Exercici 2: Validació de Configuració d'Aplicació**
 <br>
-Defineix un esquema que valida la configuració d'una aplicació. L'objecte ha de contenir les
+Defineix un esquema que valida la configuració d'una aplicació. L'objecte ha de contenir les[text](2configuracion_aplicacion.json)
 propietats "idioma" (cadena de text), "mode" (cadena de text amb opcions "normal" o "dark"), i
 opcionalment "notificacions" (boolean).
 
