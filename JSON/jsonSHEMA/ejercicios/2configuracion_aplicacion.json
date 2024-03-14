@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Configurador de aplicaciones",
+    "description": "Un programica de JSON pa' ver configuración del dispositivo y notificaciones",
+    "type": "object", 
+    "properties": { 
+      "modo": { 
+        "type": "string" // Te falta meter de default modo oscuro o normal //
+      }, 
+      "notis": { 
+        "type": "boolean" 
+      }
+    }, 
+    "required": ["modo", "notis"]
+}

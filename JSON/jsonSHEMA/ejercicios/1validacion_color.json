@@ -1,0 +1,13 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#", 
+    "title": "Validador de color",
+    "description": "Esto e' un programica bien majo pa' escribir algún código de color",
+    "type": "object",
+    "properties": {
+      "colorPrincipal": {
+        "type": "string",
+        "pattern": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})?$"
+        }
+    }, 
+    "required": ["color"]
+}

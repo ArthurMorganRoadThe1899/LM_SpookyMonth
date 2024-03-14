@@ -9,7 +9,7 @@ Regex per a la cadena exadecimal: "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})?$"
 
 - **Exercici 2: Validació de Configuració d'Aplicació**
 <br>
-Defineix un esquema que valida la configuració d'una aplicació. L'objecte ha de contenir les[text](2configuracion_aplicacion.json)
+Defineix un esquema que valida la configuració d'una aplicació. L'objecte ha de contenir les
 propietats "idioma" (cadena de text), "mode" (cadena de text amb opcions "normal" o "dark"), i
 opcionalment "notificacions" (boolean).
 
@@ -35,3 +35,5 @@ Defineix un esquema que valida la informació d'un producte. L'objecte ha de con
 Utilitza un esquema extern per validar una llista d'usuaris. L'esquema de l'usuari ha de contenir les
 propietats "nom" (cadena de text) i "email" (cadena de text amb format d'email). La llista ha de tenir com a
 mínim 2 usuaris.
+
+# Valorador de JSON https://www.jsonschemavalidator.net/
