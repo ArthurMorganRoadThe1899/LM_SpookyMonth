@@ -3,13 +3,30 @@
     "title": "Configurador de aplicaciones",
     "description": "Un programica de JSON pa' ver configuración del dispositivo y notificaciones",
     "type": "object", 
-    "properties": { 
-      "modo": { 
-        "type": "string" // Te falta meter de default modo oscuro o normal //
+    "properties": {
+
+      "idioma": { 
+        "type": "array",
+        "items": {
+            "type": "string",
+            "enum": ["Espanyol", "Portugues", "Galego"]
+        }
       }, 
+
+      "modo": { 
+        "type": "array",
+        "items": {
+            "type": "string",
+            "enum": ["normal", "dark"]
+        }
+      },
+
       "notis": { 
         "type": "boolean" 
       }
     }, 
-    "required": ["modo", "notis"]
+
+    "required": ["idioma", "modo", "notis"]
+
+    
 }
