@@ -7,6 +7,7 @@
 
       "idioma": { 
         "type": "array",
+        "description": "Es el idioma que el usuario tiene puesto en el SO",
         "items": {
             "type": "string",
             "enum": ["Espanyol", "Portugues", "Galego"]
@@ -15,6 +16,7 @@
 
       "modo": { 
         "type": "array",
+        "description": "Es el modo en el que el usuario tiene el SO",
         "items": {
             "type": "string",
             "enum": ["normal", "dark"]
@@ -22,7 +24,8 @@
       },
 
       "notis": { 
-        "type": "boolean" 
+        "type": "boolean",
+        "description": "Booleano que sirve para comprobar si el usuario tiene notificaciones"
       }
     }, 
 

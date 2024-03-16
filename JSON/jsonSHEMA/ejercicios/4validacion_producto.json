@@ -1,0 +1,42 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Validacion de producto",
+    "description": "Un programica de JSON para almacenar usuarios con nombre y puntuación",
+    "type": "object", 
+
+    "properties": {
+        "producto": {
+            "type:": "array",
+            "description": "Array de la informacion del producto",
+
+            "items": {
+                "type": "object",
+                "properties": {
+                    "nombre":{
+                        "type":"string",
+                        "description": "Nombre del producto"
+                    },
+
+                    "precio":{
+                        "type":"integer",
+                        "description": "Precio del producto"
+                    },
+
+                    "disponible":{
+                        "type":"boolean",
+                        "description": "Disponibilidad del producto"
+                    }
+                },
+                "required": ["nombre", "precio", "disponible"],
+                "additionalProperties": false
+            },
+            "enum":[
+                {"nombre": "Orchata", "precio": 5, "disponible": true},
+                {"nombre": "PC Gamer 4K", "precio": 2500, "disponible": false},
+                {"nombre": "Pack de una docena de hamburguesas", "precio": 7, "disponible": true}
+            ]
+            
+        }
+
+    }
+}
