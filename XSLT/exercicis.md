@@ -69,3 +69,6 @@ Crea una transformació XSLT que utilitze `xsl:if` per mostrar només la civilit
 Modifica la transformació XSLT per les civilitzacions amb `xsl:choose` que mostre:
 - Civilització amb l'any = "1500 aC" i la ciutat.
 - Civilització amb l'any = "300 aC" i el seu lider
+
+# info: https://www.w3schools.com/xml/xsl_transformation.asp
+# info2: https://aules.edu.gva.es/fp/pluginfile.php/7186619/mod_resource/content/8/XSL-XPATH-XSLT.pdf
