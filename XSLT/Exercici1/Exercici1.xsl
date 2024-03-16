@@ -11,7 +11,7 @@
     </xsl:template>
 
     <!-- Plantilla per a transformar l'element root 'civilizacions' -->
-    <xsl:template match="civilizacions">
+    <xsl:template match="civilitzacio">
 
         <html>
             <head>
