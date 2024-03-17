@@ -1,0 +1,53 @@
+{
+    "personajesKH":[
+        {"nombre": "Sora", "genero":"Hombre", "edad": 14, "rol": "Protagonista", "arma": "Llave espada", "actor": "Luke Manriquez"},
+        {"nombre": "Riku", "genero": "Hombre", "edad": 15, "rol": "Rival", "arma": "Devoralmas", "actor": "Ty Panit"},
+        {"nombre": "Kairi", "genero": "Mujer", "edad": 13, "rol": "Amiga de los protas", "arma": null, "actor": "Ariel Winter"},
+        {"nombre": "Ansem", "genero": "Hombre", "edad": null, "rol": "Antagonista", "arma": "Llave espada oscura", "actor": "Billy Zane"},
+        {"nombre": "Roxas", "genero": "Hombre", "edad": 15, "rol": "Protagonista preliminar", "arma": "Llaves espada", "actor": "Jesse McCartney"}
+
+    ],
+
+    "personajesRDR":[
+        {"nombre": "Arthur Morgan", "genero": "Hombre", "edad": 36, "rol": "Protagonista", "arma": "Armas de fuego", "actor": "Roger Clark"},
+        {"nombre": "John Marston", "genero": "Hombre", "edad": 30, "rol": "Protagonista", "arma": "Armas de fuego", "actor": "Rob Wiethoff"},
+        {"nombre": "Dutch Van Der Linde", "genero": "Hombre", "edad": 44, "rol": "Antagonista", "arma": "Armas de fuego", "actor": "Curzon Dobell"},
+        {"nombre": "Micah Bell", "genero": "Hombre", "edad": 39, "rol": "Antagonista", "arma": "Armas de fuego", "actor": "Peter Blomquist"},
+        {"nombre": "Sadie Adler", "genero": "Mujer", "edad": 25, "rol": "Compañero de misiones", "arma": "Armas de fuego", "actor": "Alex McKenna"},
+        {"nombre": "Charles Smith", "genero": "Hombre", "edad": 27, "rol": "Compañero de misiones", "arma": "Armas de fuego", "actor": "Noshir Dalal"},
+        {"nombre": "Javier Escuella", "genero": "Hombre", "edad": 26, "rol": "Compañero de misiones", "arma": "Armas de fuego", "actor": "Gabriel Sloyer"},
+        {"nombre": "Bill Williasom", "genero": "Hombre", "edad": 33, "rol": "Compañero de misiones", "arma": "Armas de fuego", "actor": "Rob Wiethoff"},
+        {"nombre": "Lenny Summers", "genero": "Hombre", "edad": 21, "rol": "Compañero de misiones", "arma": "Armas de fuego", "actor": "Harron Atkins"},
+        {"nombre": "Jack Marston", "genero": "Hombre", "edad": 4, "rol": "Hijo del protagonista", "arma": "Armas de fuego", "actor": "Marissa Buccianti"},
+        {"nombre": "Uncle", "genero": "Hombre", "edad": null, "rol": "Abuelo", "arma": "Armas de fuego", "actor": "James McBride"},
+        {"nombre": "Abigail Marston", "genero": "Mujer", "edad": 22, "rol": "Mujer del protagonista", "arma": "Armas de fuego", "actor": "Cali Elizabeth"},
+        {"nombre": "Sean MacGuire", "genero": "Hombre", "edad": 21, "rol": "Compañero de misiones", "arma": "Armas de fuego", "actor": "Michael Mellamphy"},
+        {"nombre": "Simon Pearson", "genero": "Hombre", "edad": null, "rol": "Cocinero", "arma": "Armas de fuego", "actor": "Jim Santageli"},
+        {"nombre": "Orville Swanson", "genero": "Hombre", "edad": null, "rol": "Clérigo", "arma": null, "actor": "Sean Haberle"},
+        {"nombre": "Josiah Trelawny", "genero": "Hombre", "edad": null, "rol": "Compañero de misiones", "arma": "Armas de fuego", "actor": "Stephen Gevedon"},
+        {"nombre": "Kieran Duffy", "genero": "Hombre", "edad": 26, "rol": "Compañero de misiones", "arma": "Armas de fuego", "actor": "Pico Alexander"},
+        {"nombre": "Mary-Beth Gaskill", "genero": "Mujer", "edad": 25, "rol": "Compañero de misiones", "arma": null, "actor": "Samantha Strelitz"},
+        {"nombre": "Molly O'Shea", "genero": "Mujer", "edad": 27, "rol": "Compañero de misiones", "arma": null, "actor": "Penny O'Brien"},
+        {"nombre": "Tilly Jackson", "genero": "Mujer", "edad": 19, "rol": "Compañero de misiones", "arma": "Armas de fuego", "actor": "Meeya Davis-Glover"},
+        {"nombre": "Susan Grimshaw", "genero": "Mujer", "edad": null, "rol": "Compañero de misiones", "arma": "Armas de fuego", "actor": "Kaili Vernoff"},
+        {"nombre": "Karen Jones", "genero": "Mujer", "edad": null, "rol": "Compañero de misiones", "arma": "Armas de fuego", "actor": "Jo Armeniox"},
+        {"nombre": "Leopold Strauss", "genero": "Hombre", "edad": null, "rol": "Compañero de misiones", "arma": null, "actor": "Howard Pinhasik"}
+    ],
+
+
+    "personajesMother3":[
+        {"nombre": "Lucas", "genero": "Hombre", "edad": 11, "rol": "Protagonista", "arma": "Palo", "Habilidades": "Poderes PSI"},
+        {"nombre": "Claus", "genero": "Hombre", "edad": 11, "rol": "Antagonista", "arma": "Espada", "Habilidades": "Poderes PSI"},
+        {"nombre": "Flint", "genero": "Hombre", "edad": null, "rol": "Padre del protagonista", "arma": "Puños", "Habilidades": "Aptitud Física"},
+        {"nombre": "Hinawa", "genero": "Mujer", "edad": null, "rol": "Madre del protagonista", "arma": null, "Habilidades": null},
+        {"nombre": "Boney", "genero": "Hombre", "edad": null, "rol": "Mascota", "arma": "Dientes", "Habilidades": "Olfato"},
+        {"nombre": "Kumatora", "genero": "Mujer", "edad": 19, "rol": "Protagonista", "arma": "Guantes", "Habilidades": "Poderes PSI"},
+        {"nombre": "Duster", "genero": "Hombre", "edad": 28, "rol": "Protagonista", "arma": "Botas", "Habilidades": "Destreza"},
+        {"nombre": "Wess", "genero": "Hombre", "edad": null, "rol": "Sabio", "arma": "Bombas electro", "Habilidades": "Destreza"},
+        {"nombre": "Salsa", "genero": "Hombre", "edad": null, "rol": "Protagonista", "arma": null, "Habilidades": "Mimica"},
+        {"nombre": "Samba", "genero": "Mujer", "edad": null, "rol": "PNJ", "arma": null, "Habilidades": "Mimica"},
+        {"nombre": "Mr Saturn", "genero": null, "edad": null, "rol": "Nopon", "arma": null, "Habilidades": "?"}
+    ]
+
+
+}
