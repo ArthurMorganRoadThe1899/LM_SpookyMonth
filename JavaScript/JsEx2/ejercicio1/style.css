@@ -1,0 +1,11 @@
+body{
+    background-color: aliceblue;
+    text-align: center;
+}
+
+#nombre{
+    background-color: rgb(160, 160, 160);
+    border-radius: 5%;
+    width:fit-content;
+    border: black solid 1px;
+}
