@@ -1,0 +1,10 @@
+body{
+    background-image: url(MajimaCompanies.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+#numero{
+    background-color: aliceblue;
+}

@@ -1,11 +1,16 @@
 body{
-    background-color: aliceblue;
+    background-image: url(Majima.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
 }
 
 #nombre{
-    background-color: rgb(160, 160, 160);
-    border-radius: 5%;
-    width:fit-content;
-    border: black solid 1px;
+    font-size: larger;
+    text-align: center;
+    color: white;
+}
+
+h1, p{
+    color: white;
 }
