@@ -3,5 +3,25 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    color: rgb(13, 119, 168);
+    color: rgb(185, 2, 2);
 }
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(71, 71, 71);
+    opacity:.7;
+    color: white;
+    text-align: center;
+    border: 1px black solid;
+  }
+  
+  footer a:link{
+    color:white
+  }
+  
+  footer a:visited{
+    color: aliceblue;
+  }

@@ -10,30 +10,35 @@
 <body>
 <script src="script.js"></script>
 
+<!--En el diseño de la calculadora andaba vagete, lo hice a varios días, uno saque el diseño de la calculadora por ahí-->
+<!--Otro  me puse a agarrar y decorarlo a mi gusto, antes todo era blanco-->
+<div class="fondo">
 <div class="calculator">
-    <div class="calculator__output">0</div>
+    <div class="calculator__output" id="master">0</div>
     <div class="calculator__keys">
-      <button class="calculator__key calculator__key--operator">+</button>
-      <button class="calculator__key calculator__key--operator">-</button>
-      <button class="calculator__key calculator__key--operator">&times;</button>
-      <button class="calculator__key calculator__key--operator">÷</button>
-      <button class="calculator__key">7</button>
-      <button class="calculator__key">8</button>
-      <button class="calculator__key">9</button>
-      <button class="calculator__key">4</button>
-      <button class="calculator__key">5</button>
-      <button class="calculator__key">6</button>
-      <button class="calculator__key">1</button>
-      <button class="calculator__key">2</button>
-      <button class="calculator__key">3</button>
-      <button class="calculator__key">0</button>
-      <button class="calculator__key">.</button>
-      <button class="calculator__key">AC</button>
-      <button class="calculator__key calculator__key--enter">=</button>
-  
+      <button class="calculator__keyS calculator__key--operator" onclick="ponerNumerines('+')">+</button>
+      <button class="calculator__keyS calculator__key--operator" onclick="ponerNumerines('-')">-</button>
+      <button class="calculator__keyS calculator__key--operator" onclick="ponerNumerines('*')">&times;</button>
+      <button class="calculator__keyS calculator__key--operator" onclick="ponerNumerines('/')">÷</button>
+      <button class="calculator__keyN" onclick="ponerNumerines('7')">7</button>
+      <button class="calculator__keyN" onclick="ponerNumerines('8')">8</button>
+      <button class="calculator__keyN" onclick="ponerNumerines('9')">9</button>
+      <button class="calculator__keyN" onclick="ponerNumerines('4')">4</button>
+      <button class="calculator__keyN" onclick="ponerNumerines('5')">5</button>
+      <button class="calculator__keyN" onclick="ponerNumerines('6')">6</button>
+      <button class="calculator__keyN" onclick="ponerNumerines('1')">1</button>
+      <button class="calculator__keyN" onclick="ponerNumerines('2')">2</button>
+      <button class="calculator__keyN" onclick="ponerNumerines('3')">3</button>
+      <button class="calculator__keyN" onclick="ponerNumerines('0')">0</button>
+      <button class="calculator__keyP" onclick="ponerNumerines('.')">.</button>
+      <button class="calculator__keyD" onclick="borrarUno()">←</button>
+      <button class="calculator__keyG" onclick="borrarTo()">AC</button>
+      <button class="calculator__keyI" onclick="poderMATEMATICO()">=</button>
     </div>
-  
   </div>
-    
+</div>
+    <p>Nota:<br>AC = Clear All</p>
+
+    <footer> <a href="../PaginaPrincipal.html">Página principal</a></footer>
 </body>
 </html>

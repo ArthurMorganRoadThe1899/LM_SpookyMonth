@@ -15,3 +15,23 @@ body{
     border-radius: 5px;
     color: rgb(255, 238, 0);
 }
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(71, 71, 71);
+    opacity:.7;
+    color: white;
+    text-align: center;
+    border: 1px black solid;
+  }
+  
+  footer a:link{
+    color:white
+  }
+  
+  footer a:visited{
+    color: aliceblue;
+  }
