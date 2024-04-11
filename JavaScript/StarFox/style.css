@@ -1,0 +1,13 @@
+html{
+    background-image: url(EstrellaZorro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body{
+    
+}
+
+#title{
+    text-align: center;
+}

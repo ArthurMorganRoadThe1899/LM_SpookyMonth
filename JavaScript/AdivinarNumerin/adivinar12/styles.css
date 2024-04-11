@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+   /* align-items: flex-start; /* Aliniem a la part superior */
+   /* margin: 10px 0 0 0; marge superior */
+
+}
+
+.contenidor {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#missatge {
+    margin-bottom: 10px;
+    color: blue;
+}
+
+input {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 8px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
