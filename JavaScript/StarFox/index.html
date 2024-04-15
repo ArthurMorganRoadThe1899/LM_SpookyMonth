@@ -6,12 +6,38 @@
     <title>Ahorcado</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="starfox.png">
+    <script src="scripts/palabrusquis.js" defer></script>
+    <script src="scripts/Ahorcado.js" defer></script> <!--Joer, he estado leyendo esto y aún me queda camino, tiene sentido que exista esto pero ni me lo plantee XD -- https://albertoestrada.es/seo/cuando-usar-scripts-async-defer-prefetch/-->
 </head>
 <body>
-    <script src="Ahorcado.js"></script>
-        <h1 id="title">Juego del ahorcado</h1>
-<br>
 
+        <div class="mensajesParaElJugador">
+            <div class="contenido">
+                <img src="images/perdisteWayne.gif" alt="gif">
+                <h4>Pathetic</h4>
+                <p>Palabra correcta: <b>X</b></p>
+                <button class="rejugar">Reintentar</button>
+            </div>
+        </div>
+
+        <div class="contenedor">
+            <div class="starfox">
+                <img src="images/ahorcaofase0.svg">
+                <h1>Juegito del pibito ahorcado</h1>
+            </div>
+            <div class="juegico">
+                <ul class="escribeme">  </ul>
+                <h4 class="pistaNeno">
+                    Pista:
+                    <b>placeholder</b>
+                </h4>
+                <h4 class="intentos">
+                    Intentos fallidos:
+                    <b>0 / 6</b>
+                </h4>
+                <div class="teclao"></div>
+            </div>
+        </div>
     
 </body>
 </html>
