@@ -74,33 +74,68 @@ titulo.addEventListener('mouseleave', function() {
 
 
 // 2. Alertar en los articulos al dar click
-let article = document.getElementsByName('article');
+let articles = document.querySelectorAll('article');
 
-article.addEventListener('click', function() {
-    alert('¿Qué haces?');
+articles.forEach(function(article) {
+    article.addEventListener('click', function() {
+        alert('¿Qué haces neno?');
+    });
 });
-// ! ACABAR
-
 
 // 3. Cambiar el color de los articulos al pasar el cursor por encima suya
+articles.forEach(article => {
+    article.addEventListener('mouseenter', function() {
+        article.style.backgroundColor = 'red';
+    });
 
+    article.addEventListener('mouseleave', function() {
+        article.style.backgroundColor = '#acabab';
+    });
+});
 
 // 4. Cambiar el color de menu al pasar el cursor por encima suya
+menu.addEventListener('mouseenter', function() {
+    menu.style.backgroundColor = "purple";
+});
+
+menu.addEventListener('mouseleave', function() {
+    menu.style.backgroundColor = "#333";
+});
 
 
 // 5. Muestra la posición del índice al pasar el cursor por encima suya
 
 
 // 6. Cambiar el color del footer cuando se hace click
+let footer = document.querySelector("footer");
 
+footer.addEventListener('click', function() {
+    footer.style.backgroundColor = "red";
+});
 
 // 7. Cambiar el color del titulo al hacer doble click
+titulo.addEventListener('dblclick', function() {
+    titulo.style.backgroundColor = "#f7b90f";
+});
 
+// 8. Cambia el color del fondo de los <p> del segundo articulo cuando le des click
+let pp = document.querySelectorAll("p");
 
-// 8. Cambia el color de los <p> del segundo articulo
-
+articles[1].addEventListener('click', function() {
+    pp[1].style.backgroundColor = "blue";
+});
 
 // 9. Redirigir a otra página al darle click al titulo
+titulo.addEventListener('click', function() {
+    window.location.href = "https://youtu.be/wZVcyp5q-ds"
+});
 
 
-// 10. Cambiar los enlaces del menu al darle click
+// 10. Cambiar los textos del menu al darle click
+let aS = document.querySelectorAll("a");
+
+menu.addEventListener('click', function() {
+    for (let i = 0; i < aS.length; i++) {
+        aS[i].textContent = "¡Sorpresa!";
+    }
+});
