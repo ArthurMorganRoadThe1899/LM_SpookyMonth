@@ -103,8 +103,13 @@ menu.addEventListener('mouseleave', function() {
 });
 
 
-// 5. Muestra la posición del índice al pasar el cursor por encima suya
-
+// 5. Muestra la posición del índice de cada articulo al pasar el cursor por encima suya
+articles.forEach((article, index) => {
+    article.addEventListener('mousemove', () => {
+       document.getElementById("posIn").textContent = (`Elemento ${index + 1} dentro del artículo ${article.querySelector('h2').textContent}`);
+    });
+});
+// Este no se si lo entendí del todo XD
 
 // 6. Cambiar el color del footer cuando se hace click
 let footer = document.querySelector("footer");
