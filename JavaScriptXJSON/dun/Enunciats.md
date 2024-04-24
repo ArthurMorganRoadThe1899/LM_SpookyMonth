@@ -1,4 +1,4 @@
-# Exercicis Pràctics del DOM
+# Exercicis Pràctics del DOM.
 
 ## Exercici 1
 Canvia el color de fons del títol a un color verd fosc (#006400).
