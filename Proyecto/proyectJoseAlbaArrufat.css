@@ -15,7 +15,16 @@ body{
     text-align: center;
     font-family: huh;
     font-size: 50px;
-    
+}
+
+#OGtitle a:link{
+    color: white;
+    text-decoration-line: none;
+}
+
+#OGtitle a:visited{
+    color: white;
+    text-decoration-line: none;
 }
 
 .title_game{
