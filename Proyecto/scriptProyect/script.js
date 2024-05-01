@@ -37,11 +37,15 @@ sora.addEventListener('click', function() {
   window.location.href = 'https://arthurmorganroadthe1899.github.io';
 });
 
-// 5. 
+// 5. Le haces doble click a Riku y hace algo que me habré acordado de apuntar
+let riku = document.getElementById("riku");
+riku.addEventListener('dblclick', function() {
+  window.location.href = 'https://youtu.be/OPuTgyaM7cw';
+});
 
 
 
-// Fallo
+// Fallo, quería meter el audio vía uno de estas cosas del DOM xD
 /*
   let KH = document.getElementById("KH");
   let ui = new Audio('audio/ui.mp3');
