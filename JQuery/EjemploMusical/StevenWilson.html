@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deo Pino</title>
+    <link rel="icon" href="nameless.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
+</head>
+<body>
+    <h1>Web de Música</h1>
+
+    <script id="musica_la_templata" type="text/x-handlebars-template">
+
+    <h3>Grupo: {{:name}}</h3>
+    {{for albums}}
+    <h1>Album: {{:title}}</h1>
+    <img src="{{:image}}" width="10%"/>
+    <p>{{:description}}</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Song</th>
+                <th>Duration</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{for songs}}
+            <tr>
+                <td>{{:title}}</td>
+                <td>{{:length}}</td>
+            </tr>
+            {{/for}}
+        </tbody>
+    </table>
+    {{/for}}
+
+</script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsrender/1.0.14/jsrender.min.js"></script>
+
+    <div id="aCuantoElPanGuapo"></div>
+    <script>
+        $.getJSON('musica.json',function(datos){
+            let html = $("#musica_la_templata").render(datos);
+            $("#aCuantoElPanGuapo").html(html);
+            console.log(html);
+            
+    });
+    </script>
+</body>
+</html>
