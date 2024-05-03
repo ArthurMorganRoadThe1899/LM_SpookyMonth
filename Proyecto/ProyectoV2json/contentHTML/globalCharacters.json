@@ -284,56 +284,107 @@
               }
             ],
 
-            "charactersMother": [
+              "MotherDoubleCharacters": [
+                {
+                  "id": "lc",
+                  "image": "../../images/mother3characters/lucas.png",
+                  "image2": "../../images/mother3characters/claus.png",
+                  "name": "Lucas",
+                  "name2": "Claus",
+                  "gender": "Hombre",
+                  "gender2": "Hombre",
+                  "age": "8 | 11 (timeskip)",
+                  "age2": "Edad: 8 | 11",
+                  "role": "Protagonista",
+                  "role2": "Antagonista",
+                  "weapon": "Palo",
+                  "weapon2": "Espada PSI",
+                  "hability": "Poderes PSI, PSI del elegido",
+                  "hability2": "Poderes PSI, PSI del elegido"
+                },
+                {
+                  "id": "fh",
+                  "image": "../../images/mother3characters/flint.png",
+                  "image2": "../../images/mother3characters/hinawa.png",
+                  "name": "Flint",
+                  "name2": "Hinawa",
+                  "gender": "Hombre",
+                  "gender2": "Mujer",
+                  "age": "+45",
+                  "age2": "+43",
+                  "role": "Padre",
+                  "role2": "Madre",
+                  "weapon": "Tronco de madera",
+                  "weapon2": null,
+                  "hability": null,
+                  "hability2": null
+                },
+                {
+                  "id": "ss",
+                  "image": "../../images/mother3characters/salsa.png",
+                  "image2": "../../images/mother3characters/samba.png",
+                  "name": "Salsa",
+                  "name2": "Samba",
+                  "gender": "Hombre",
+                  "gender2": "Mujer",
+                  "age": "?",
+                  "age2": "?",
+                  "role": "Protagonista",
+                  "role2": "¿Protagonista?",
+                  "weapon": null,
+                  "weapon2": null,
+                  "hability": null,
+                  "hability2": null
+                }
+              ],
+
+
+              "MotherSingleCharacter": [
+
               {
+                "id": "boney",
                 "image": "../../images/mother3characters/boney.png",
-                "name": "",
-                "gender": "",
-                "age": 0,
-                "role": "",
-                "VA": "",
-                "hability": null,
-                "weapon": ""
+                "name": "Boney",
+                "gender": "Macho",
+                "age": "+5",
+                "role": "Protagonista",
+                "hability": "Olfateo"
               },
               {
+                "id": "kumatora",
                 "image": "../../images/mother3characters/kumatora.png",
-                "name": "",
-                "gender": "",
-                "age": 0,
-                "role": "",
-                "VA": "",
-                "hability": null,
-                "weapon": ""
+                "name": "Kumatora",
+                "gender": "Mujer",
+                "age": "18-26 (aprox)",
+                "role": "Protagonista",
+                "hability": "Poderes PSI"
               },
               {
+                "id": "duster",
                 "image": "../../images/mother3characters/duster.png",
-                "name": "",
-                "gender": "",
-                "age": 0,
-                "role": "",
-                "VA": "",
-                "hability": null,
-                "weapon": ""
+                "name": "Duster",
+                "gender": "Hombre",
+                "age": "20-30 (aprox)",
+                "role": "Protagonista",
+                "hability": "Conocimiento en utensilios de ladrón"
               },
               {
+                "id": "wess",
                 "image": "../../images/mother3characters/wess.png",
-                "name": "",
-                "gender": "",
-                "age": 0,
-                "role": "",
-                "VA": "",
-                "hability": null,
-                "weapon": ""
+                "name": "Wess",
+                "gender": "Hombre",
+                "age": "+60",
+                "role": "Sabio",
+                "hability": "Conocimiento en utensilios de ladrón"
               },
               {
+                "id": "mrsaturn",
                 "image": "../../images/mother3characters/mrsaturn.gif",
-                "name": "",
-                "gender": "",
-                "age": 0,
-                "role": "",
-                "VA": "",
-                "hability": null,
-                "weapon": ""
+                "name": "Mr Saturn",
+                "gender": "?",
+                "age": "?",
+                "role": "Nopon",
+                "hability": null
               }
             ]
             
