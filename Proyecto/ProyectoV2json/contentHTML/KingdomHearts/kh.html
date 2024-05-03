@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kingdom Hearts</title>
+    <link rel="stylesheet" href="kh.css">
+    <link rel="icon" href="../../images/iconKIyogre.png">
+</head>
+<body>
+    <header>
+        <h1 id="OGtitle">Kingdom Hearts</h1>
+    </header>
+<br>
+    <nav class="decoration">
+        <a href="#Sora">Sora</a>
+        <a href="#Riku">Riku</a>
+        <a href="#Kairi">Kairi</a>
+        <a href="#Ansem">Ansem</a>
+        <a href="#Roxas">Roxas</a>
+    </nav>
+<br>
+
+<script id="KH_templatinos" type="text/x-handlebars-template">
+<div class="scroll-conteneor">
+    {{for charactersKH}}
+    <div class="scroll-min">
+        <div id="{{:name}}">
+        <h1 class="pjtxtT">{{:name}}</h1>
+            <img src="{{:image}}" width="210px"/>
+                <p class="pjtxt">Género: {{:gender}}
+                    <br>Edad: {{:age}}
+                    <br>Rol: {{:role}}
+                    <br>Actor: {{:VA}}
+                    <br>Arma: {{:weapon}}
+                </p>
+        </div>
+    </div>
+    {{/for}}
+</div>
+</script>
+
+<footer><a href="../../proyectoJoseAlbaArrufat.html">Página principal</a></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jsrender/1.0.14/jsrender.min.js"></script>
+
+<div id="info"></div>
+    <script>
+        $.getJSON('../globalCharacters.json',function(data){
+            let html = $("#KH_templatinos").render(data);
+            $("#info").html(html);
+    });
+    </script>
+</body>
+</html>

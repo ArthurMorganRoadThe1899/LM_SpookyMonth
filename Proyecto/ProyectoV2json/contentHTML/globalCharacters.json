@@ -1,0 +1,341 @@
+[
+    {
+            "title": "gameCharacters",
+            "charactersKH": [
+              {
+                "image": "../../images/KHcharacters/sora.png",
+                "name": "Sora",
+                "gender": "Hombre",
+                "age": 14,
+                "role": "Protagonista",
+                "VA": "Luke Manriquez (KH1)",
+                "weapon": "Cadena del reino "
+
+              },
+              {
+                "image": "../../images/KHcharacters/riku.png",
+                "name": "Riku",
+                "gender": "Hombre",
+                "age": 15,
+                "role": "Rival",
+                "VA": "Ty Panitz (KH1)",
+                "weapon": "Devoraalmas"
+              },
+              {
+                "image": "../../images/KHcharacters/kairi.png",
+                "name": "Kairi",
+                "gender": "Mujer",
+                "age": 13,
+                "role": "Princesa de la luz",
+                "VA": "Ariel Winter (KH1)",
+                "weapon": null
+              },
+              {
+                "image": "../../images/KHcharacters/ansemtheseekerofdarkness.png",
+                "name": "Ansem",
+                "gender": "Hombre",
+                "age": "Unknow",
+                "role": "Antagonista",
+                "VA": "Billy Zane (KH1)",
+                "weapon": "Llave espada oscura | Guardián de Xehanort"
+              },
+              {
+                "image": "../../images/KHcharacters/roxasDualW.png",
+                "name": "Roxas",
+                "gender": "Hombre",
+                "age": "15",
+                "role": "Protagonista",
+                "VA": "Jesse McCartney ",
+                "weapon": "Recuerdos lejanos | Prometida, Cadena del reino"
+              }
+            ],
+
+            "charactersRDR": [
+              {
+                "image": "../../images/RDRcharacters/arthurmorgan.png",
+                "name": "Arthur Morgan",
+                "gender": "Hombre",
+                "age": 36,
+                "role": "Protagonista",
+                "VA": "Roger Clark",
+                "hability": "Dead Eye",
+                "weapon": "Pareja de pistola M1899 | Revólver de Cattleman | Witcher de repetición | Escopeta de corredera"
+
+              },
+              {
+                "image": "../../images/RDRcharacters/johnmarston.png",
+                "name": "John Marston",
+                "gender": "Hombre",
+                "age": "30 (RDR2) | 48 (RDR2-E) | 42 (RDR1)",
+                "role": "Protagonista",
+                "VA": "Rob Wiethoff",
+                "hability": "Dead Eye",
+                "weapon": "Pareja de pistola M1899 | Revólver de Cattleman | Witcher de repetición | Escopeta de corredera"
+              },
+              {
+                "image": "../../images/RDRcharacters/dutchvanderlinde.png",
+                "name": "Dutch Van Der Linde",
+                "gender": "Hombre",
+                "age": "44 (RDR2) | 52 (RDR2-E) | 56 (RDR1)",
+                "role": "Líder de la banda | Antagonista",
+                "VA": "Curzon Dobell",
+                "hability": "Dead Eye",
+                "weapon": "Revólver de Cattleman"
+              },
+              {
+                "image": "../../images/RDRcharacters/micahbell.png",
+                "name": "Micah Bell",
+                "gender": "Hombre",
+                "age": "39 (RDR2) | 47 (RDR2-E)",
+                "role": "Antagonista",
+                "VA": "Peter Blomquist",
+                "hability": "Dead Eye",
+                "weapon": "Pareja de revólvers de doble acción personalizados"
+              },
+              {
+                "image": "../../images/RDRcharacters/sadieadler.png",
+                "name": "Sadie Adler",
+                "gender": "Mujer",
+                "age": "25 (RDR2) | 33 (RDR2-E)",
+                "role": "Compañera de misiones",
+                "VA": "Alex McKenna",
+                "hability": null,
+                "weapon": "Revólver de Cattleman | Carabina de repetición"
+              },
+              {
+                "image": "../../images/RDRcharacters/charlessmith.png",
+                "name": "Charles Smith",
+                "gender": "Hombre",
+                "age": "27 (RDR2)| 35 (RDR2-2) ",
+                "role": "Compañero de misiones",
+                "VA": "Noshir Dalal",
+                "hability": "Conocimientos en supervivencia",
+                "weapon": "Escopeta recortada"
+              },
+              {
+                "image": "../../images/RDRcharacters/javierescuella.png",
+                "name": "Javier Escuella",
+                "gender": "Hombre",
+                "age": "26 (RDR2) | 34 (RDR1)",
+                "role": "Compañero de misiones",
+                "VA": "Gabriel Sloyer",
+                "hability": null,
+                "weapon": "Revólver de doble acción"
+              },
+              {
+                "image": "../../images/RDRcharacters/billwillamsom.png",
+                "name": "Bill Williamson",
+                "gender": "Hombre",
+                "age": "33 (RDR2) | 41 (RDR1)",
+                "role": "Compañero de misiones",
+                "VA": "Rob Wiethoff",
+                "hability": null,
+                "weapon": "Revólver Cattleman | Revólver Schofield | Winchester de Repetición"
+              },
+              {
+                "image": "../../images/RDRcharacters/lennysummers.png",
+                "name": "Leonard Summers / Lenny Summers",
+                "gender": "Hombre",
+                "age": 21,
+                "role": "Compañero de misiones",
+                "VA": "Harron Atkins",
+                "hability": null,
+                "weapon": "Revólver Cattleman | Winchester de Repetición | Fusil de cerrojo"
+              },
+              {
+                "image": "../../images/RDRcharacters/jackmarston.png",
+                "name": "Jack Marston",
+                "gender": "Hombre",
+                "age": "4 (RDR2) | 10 (RDR2-E)| 14 (RDR1) | 17-18 (RDR1-E)",
+                "role": "Protagonista secundario",
+                "VA": "Marissa Buccianti (Niño) | Marissa Buccianti (Adolescente) | Josh Blaylock (Adolescente y adulto en RDR1)",
+                "hability": "Dead Eye",
+                "weapon": "Pistola Hi-Power | Cabina de repetición | Escopeta semiautomatica"
+              },
+              {
+                "image": "../../images/RDRcharacters/uncle.png",
+                "name": "Uncle",
+                "gender": "Hombre",
+                "age": "+50",
+                "role": "Abuelo",
+                "VA": "James McBride (RDR2) | John O'Creagh (RDR1)",
+                "hability": null,
+                "weapon": "Revólver Cattleman | Winchester de Repetición "
+              },
+              {
+                "image": "../../images/RDRcharacters/abigailroberts.png",
+                "name": "Abigail Marston",
+                "gender": "Mujer",
+                "age": "22 (RDR2) | 30 (RDR2-E) | 34 (RDR1) | 37-38 (RDR1-E)",
+                "role": "Madre",
+                "VA": "Cali Elizabeth Moore",
+                "hability": null,
+                "weapon": "Revólver Cattleman"
+              },
+              {
+                "image": "../../images/RDRcharacters/seanmacguire.png",
+                "name": "Sean MacGuire",
+                "gender": "Hombre",
+                "age": 21,
+                "role": "Compañero de misiones",
+                "VA": "Michael Mellamphy",
+                "hability": null,
+                "weapon": "Revólver Cattleman | Cabina de repetición"
+              },
+              {
+                "image": "../../images/RDRcharacters/simonpearson.png",
+                "name": "Simon Pearson",
+                "gender": "Hombre",
+                "age": 48,
+                "role": "Cocinero",
+                "VA": "Jim Santangeli",
+                "hability": null,
+                "weapon": "Revólver Cattleman"
+              },
+              {
+                "image": "../../images/RDRcharacters/orvilleswanson.png",
+                "name": "Orville Swanson | Reverendo Swanson",
+                "gender": "Hombre",
+                "age": "+40",
+                "role": "Clérigo",
+                "VA": "Sean Haberle",
+                "hability": null,
+                "weapon": "Revólver Cattleman"
+              },
+              {
+                "image": "../../images/RDRcharacters/josiahtrelawny.png",
+                "name": "Josiah Trelawny",
+                "gender": "Hombre",
+                "age": "40-50",
+                "role": "Timador",
+                "VA": "Stephen Gevedon",
+                "hability": null,
+                "weapon": "Revólver de Cattleman"
+              },
+              {
+                "image": "../../images/RDRcharacters/kieranduffy.png",
+                "name": "Kieran Duffy",
+                "gender": "Hombre",
+                "age": 26,
+                "role": "Compañero de misiones",
+                "VA": "Pico Alexander",
+                "hability": null,
+                "weapon": "Revólver Cattleman"
+              },
+              {
+                "image": "../../images/RDRcharacters/marybeth.png",
+                "name": "Mary-Beth Gaskill",
+                "gender": "Mujer",
+                "age": "20-30",
+                "role": "Compañera de campamento",
+                "VA": "Samantha Strelitz",
+                "hability": null,
+                "weapon": null
+              },
+              {
+                "image": "../../images/RDRcharacters/mollyoshea.png",
+                "name": "Molly O'Shea",
+                "gender": "Mujer",
+                "age": "20-30",
+                "role": "Compañera de campamento",
+                "VA": "Penny O'Brien",
+                "hability": null,
+                "weapon": null
+              },
+              {
+                "image": "../../images/RDRcharacters/tillyjackson.png",
+                "name": "Tilly Jackson",
+                "gender": "Mujer",
+                "age": "19-24",
+                "role": "Compañera de misiones",
+                "VA": "Meeya Davis-Glover",
+                "hability": null,
+                "weapon": "Revólver de Cattleman"
+              },
+              {
+                "image": "../../images/RDRcharacters/susangrimshaw.png",
+                "name": "Susan Grimshaw",
+                "gender": "Mujer",
+                "age": "+45",
+                "role": "Compañera de campamento",
+                "VA": "Kaili Vernoff",
+                "hability": null,
+                "weapon": "Escopeta de corredera"
+              },
+              {
+                "image": "../../images/RDRcharacters/karenjones.png",
+                "name": "Karen Jones",
+                "gender": "Mujer",
+                "age": "+24",
+                "role": "Compañera de misiones",
+                "VA": "Jo Armeniox",
+                "hability": null,
+                "weapon": "Revólver de Cattleman | Carbina de repetición"
+              },
+              {
+                "image": "../../images/RDRcharacters/leopoldstrauss.png",
+                "name": "Leopold Strauss",
+                "gender": "Hombre",
+                "age": "+53",
+                "role": "Contable",
+                "VA": "Howard Pinhasik",
+                "hability": null,
+                "weapon": null
+              }
+            ],
+
+            "charactersMother": [
+              {
+                "image": "../../images/mother3characters/boney.png",
+                "name": "",
+                "gender": "",
+                "age": 0,
+                "role": "",
+                "VA": "",
+                "hability": null,
+                "weapon": ""
+              },
+              {
+                "image": "../../images/mother3characters/kumatora.png",
+                "name": "",
+                "gender": "",
+                "age": 0,
+                "role": "",
+                "VA": "",
+                "hability": null,
+                "weapon": ""
+              },
+              {
+                "image": "../../images/mother3characters/duster.png",
+                "name": "",
+                "gender": "",
+                "age": 0,
+                "role": "",
+                "VA": "",
+                "hability": null,
+                "weapon": ""
+              },
+              {
+                "image": "../../images/mother3characters/wess.png",
+                "name": "",
+                "gender": "",
+                "age": 0,
+                "role": "",
+                "VA": "",
+                "hability": null,
+                "weapon": ""
+              },
+              {
+                "image": "../../images/mother3characters/mrsaturn.gif",
+                "name": "",
+                "gender": "",
+                "age": 0,
+                "role": "",
+                "VA": "",
+                "hability": null,
+                "weapon": ""
+              }
+            ]
+            
+      }
+]
