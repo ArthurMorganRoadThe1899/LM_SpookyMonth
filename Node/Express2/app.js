@@ -57,8 +57,8 @@ app.get('/api/kh', function (req, res){
         .from('KingdomHeartsCHR as KH')
         .then(function (data){
             result = {}
-            result.kh = data; // Arreglar
-            res.json(data);
+            result.kh = data;
+            res.json(result);
         }).catch(function (error){
             console.log(error)
     });

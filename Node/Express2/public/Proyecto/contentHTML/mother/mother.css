@@ -1,0 +1,129 @@
+body{
+    text-align: center;
+    background-image: url(../../images/portrait/mother3background.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    display: inline-block;
+    width: 50px;
+    text-decoration: none;
+    margin: 5px;
+    color: rgb(92, 92, 92);
+    transition: ease-in;
+}
+
+a:hover{
+    color: rgb(70, 56, 30);
+}
+
+footer{
+    background-color: #7474743b;
+    text-align: center;
+    border: #080024 1px solid;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: -2%;
+    width: 2000px;
+    font-weight: bolder;
+}
+
+footer a:link{
+    color: rgb(97, 97, 97);
+}
+
+footer a:visited{
+    color: rgb(97, 97, 97);
+}
+
+.al{
+    display: flex;
+    justify-content: center;
+}
+  
+nav {
+    width: auto;
+    padding: 5px;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+nav.decoration{
+    background-color: #ff0000;
+    text-decoration: none;
+    border: 5px solid rgb(182, 182, 182);
+    border-radius: 50px;
+    margin: 10px;
+    transition: ease-in;
+}
+
+.pjtxtT{
+    color: rgb(137, 6, 197);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+}
+
+.pjtxt{
+    color: rgb(137, 6, 197);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.conteneor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+div.ConS {
+    background-color: #3333333f;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+    height: 500px;
+    width: 600px;
+    margin: auto;
+}
+
+div.ConT{
+    display: flex;
+    flex: 1;
+    min-width: 300px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+div{
+    margin: 5px;
+}
+
+#OGtitle{
+    background-image: url(../../images/portrait/firstmother3.jpg);
+    background-attachment: unset;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center top;
+    background-position: 50% 55%;
+    border: 5px solid rgb(58, 58, 58);
+    color: #ff4800;
+    font-weight: bold;
+    font-size: 50px;
+    padding: 20px;
+    width: 80%; 
+    margin: 0 auto;
+    text-align: center;
+    font-family: titulomachucho;
+}
+
+@font-face {
+    font-family: titulomachucho;
+    src: url(../../titulomachucho.woff);
+}
+
+audio { display:none;}

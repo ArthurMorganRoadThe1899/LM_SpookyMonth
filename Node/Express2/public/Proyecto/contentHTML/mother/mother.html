@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mother 3</title>
+    <link rel="stylesheet" href="mother.css">
+    <link rel="icon" href="../../images/iconKIyogre.png">
+</head>
+<body>
+
+    <header>
+        <h1 id="OGtitle">Mother 3</h1>
+    </header>
+    
+  <br>
+  <div class="al">
+    <nav  class="decoration">
+      <a href="#lc">Lucas & Claus</a>
+      <a href="#fh">Flint & Hinawa</a>
+      <a href="#boney">Boney</a>
+      <a href="#kumatora">Kumatora</a>
+      <a href="#duster">Duster</a>
+      <a href="#wess">Wess</a>
+      <a href="#ss">Salsa & Samba</a>
+      <a href="#mrsaturn">Mr Saturn</a>
+    </nav>
+  </div>
+  <br>
+    
+
+
+<!--Hice dos for adaptados, uno para los duales y otro para los individuales-->
+
+<script id="teParteLaMadre3Template" type="text/x-handlebars-template">
+
+<div class="ConT">
+<div class="ConS">
+{{for MotherDoubleCharacters}}
+
+<!--Duales-->
+<div class="conteneor" id="{{:id}}">
+  <div> 
+    <h1 class="pjtxtT">{{:name}}</h1>
+        <img src="{{:image}}" width="50%"/> 
+    <p class="pjtxt">Género: {{:gender}}
+        <br>Edad: {{:age}}
+        <br>Rol: {{:role}}
+        <br>Arma: {{:weapon}}
+        <br>Habilidades: {{:hability}}
+    </p>
+  </div>
+
+  <div>
+    <h1 class="pjtxtT">{{:name2}}</h1>
+        <img src="{{:image2}}" width="50%"/>
+    <p class="pjtxt">Género: {{:gender2}}
+        <br>Edad: {{:age2}}
+        <br>Rol: {{:role}}
+        <br>Arma: {{:weapon2}}
+        <br>Habilidades: {{:hability2}}
+    </p>
+  </div>
+</div>
+
+{{/for}}
+{{for MotherSingleCharacter}}
+
+<!--Individuales-->
+  <div class="conteneor">
+    <div id="{{:id}}">
+    <h1 class="pjtxtT">{{:name}}</h1>
+        <img src="{{:image}}"/>
+    <p class="pjtxt">Género: {{:gender}}
+        <br>Edad: {{:age}}
+        <br>Rol: {{:role}}
+        <br>Habilidades: {{:hability}}
+    </p>
+    </div>
+  </div>  
+
+<br>
+{{/for}}
+</div>
+</div>
+
+</script>
+
+
+
+<footer><a href="../../proyectoJoseAlbaArrufat.html">Página principal</a></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jsrender/1.0.14/jsrender.min.js"></script>
+
+<div id="info"></div>
+    <script>
+        $.getJSON('/api/mother',function(data){
+            let html = $("#teParteLaMadre3Template").render(data);
+            $("#info").html(html);
+    });
+    </script>
+</body>
+</html>
