@@ -8,6 +8,7 @@ var sqlite3 = require('sqlite3');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+const {name} = require("pug");
 
 var app = express();
 
@@ -35,25 +36,33 @@ var db = require('knex')({
 // JS2 1
 // Sacar nombres de pjs de Mother 3
 app.get('/api/mother', function (req, res){
-  db.select('M3.id', 'M3.name', 'M3.weapon')
-      .from('Mother3CHR as M3')
-      .then(function (data){
-          res.json(data);
-      });
+    db.select('M3.name', 'M3.age', 'M3.gender', 'M3.role', 'M3.weapon', 'M3.hability')
+        .from('Mother3CHR as M3')
+        .then(function (data){
+            result = {}
+            result.m3 = data;
+            res.json(result);
+        }).catch(function (error){
+        console.log(error)
+    });
 });
 
 // Sacar nombres de pjs de Red Dead Redemption 2
 app.get('/api/rdr', function (req, res){
-    db.select('RDR.id', 'RDR.name', 'RDR.weapon')
+    db.select('RDR.name', 'RDR.age', 'RDR.gender', 'RDR.va', 'RDR.role', 'RDR.weapon', 'RDR.hability')
         .from('RedDeadRedemptionCHR as RDR')
         .then(function (data){
-            res.json(data);
-        });
+            result = {}
+            result.rdr = data;
+            res.json(result);
+        }).catch(function (error){
+        console.log(error)
+    });
 });
 
 // Sacar nombres de pjs de Kingdom Hearts
 app.get('/api/kh', function (req, res){
-    db.select('KH.name', 'KH.age', 'KH.gender', 'KH.va', 'KH.role', 'KH.weapon')
+    db.select('KH.id', 'KH.name', 'KH.age', 'KH.gender', 'KH.va', 'KH.role', 'KH.weapon')
         .from('KingdomHeartsCHR as KH')
         .then(function (data){
             result = {}
@@ -64,16 +73,29 @@ app.get('/api/kh', function (req, res){
     });
 });
 
-
 app.get('/api/kh/:id', function (req, res){
     let id = parseInt(req.params.id);
 
-    db.select('KH.name', 'KH.age', 'KH.gender', 'KH.va', 'KH.role', 'KH.weapon')
+    db.select('KH.id', 'KH.name', 'KH.age', 'KH.gender', 'KH.va', 'KH.role', 'KH.weapon')
         .from('KingdomHeartsCHR as KH')
-        .where('KH.id', id)
         .then(function (data){
             res.json(data);
-        });
+        }).catch(function (error){
+        console.log(error)
+    });
+});
+
+app.delete('/api/kh/:id', function (req, res){
+    let id = parseInt(req.params.id);
+    // Consulta para borrar
+    db.delete()
+        .from('KingdomHeartsCHR')
+        .where('id', id)
+        .then(function (data){
+            res.json(data);
+        }).catch(function (error){
+        console.log(error)
+    });
 });
 
 // Sacar los nombres de pjs del red, habilidades del mother 3, y armas del kingdom hearts

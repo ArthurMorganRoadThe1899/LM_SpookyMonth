@@ -11,6 +11,14 @@ a {
     margin: 5px;
 }
 
+div a:link{
+    color: #7ac3de;
+}
+
+div a:visited{
+    color: #7ac3de;
+}
+
 footer{
     background-color: #7474743b;
     text-align: center;
