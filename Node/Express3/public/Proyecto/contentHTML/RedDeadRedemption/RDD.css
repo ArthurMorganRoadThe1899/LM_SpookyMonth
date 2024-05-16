@@ -1,0 +1,64 @@
+body{
+    text-align: center;
+    background-image: url(../../images/portrait/fondoRDR.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a:hover{
+    color: rgb(104, 77, 29);
+}
+
+footer{
+    background-color: #7474743b;
+    text-align: center;
+    border: #080024 1px solid;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: -2%;
+    width: 2000px;
+    font-weight: bolder;
+}
+
+footer a:link{
+    color: rgb(245, 255, 191);
+}
+
+footer a:visited{
+    color: rgb(164, 172, 122);
+}
+
+.pjtxtT{
+    color: rgb(255, 231, 96);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+}
+
+.pjtxt{
+    color: rgb(255, 231, 96);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#OGtitle{
+    background-image: url(../../images/portrait/firstRDR.jpg);
+    background-attachment: unset;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 38%;;
+    border: 5px solid rgb(58, 58, 58);
+    color: #ff0000;
+    font-weight: bold;
+    font-size: 42px;
+    padding: 20px;
+    width: 80%; 
+    margin: 0 auto;
+    text-align: center;
+    font-family: titulomachucho;
+}
+
+@font-face {
+    font-family: titulomachucho;
+    src: url(../../titulomachucho.woff);
+}

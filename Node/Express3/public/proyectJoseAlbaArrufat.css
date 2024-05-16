@@ -1,0 +1,77 @@
+body{
+    background-image:url(Proyecto/images/nier-automata-sword-w.png);
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-size: cover;
+}
+
+#OGtitle{
+    background-color: black;
+    border: 5px solid white;
+    color: #ffffff;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: huh;
+    font-size: 50px;
+}
+
+#OGtitle a:link{
+    color: white;
+    text-decoration-line: none;
+}
+
+#OGtitle a:visited{
+    color: white;
+    text-decoration-line: none;
+}
+
+.title_game{
+    font-style: italic;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.title_game:link{
+    color: azure;
+}
+
+
+#KH:hover{
+    color: yellow;
+    background-color: rgb(255, 255, 255);
+}
+
+#RDD:hover{
+    color: red;
+    background-color: rgb(43, 43, 43);
+}
+
+#ME:hover{
+    color: gray;
+    background-color: red;
+}
+
+a:visited{
+    color: rgb(100, 77, 77);
+}
+
+h2#KH a:link{
+    color: rgb(139, 139, 139);
+}
+
+h2#RDD a:link{
+    color: rgb(255, 255, 255);
+}
+
+
+h2#ME a:link{
+    color: rgb(87, 87, 87);
+}
+
+
+@font-face {
+    font-family: huh;
+    src: url(Proyecto/titulomachucho.woff);
+}
