@@ -4,11 +4,19 @@ body{
     background-attachment: fixed;
 }
 
+h1{
+    color: white;
+}
+
 a {
     display: inline-block;
     width: 50px;
     text-decoration: none;
     margin: 5px;
+}
+
+label{
+    color: white;
 }
 
 div a:link{

@@ -21,7 +21,41 @@
     </nav>
 <br>
 
+<script id="add_templatinos" type="text/x-handlebars-template">
+    <h1>Añadir Personaje</h1>
+    <form id="add_character_form">
+        <label for="name">Nombre</label>
+        <br>
+        <input type="text" id="name" name="name">
+<br>
+        <label for="age">Edad</label>
+        <br>
+        <input type="text" id="age" name="age">
+
+<br>
+        <label for="gender">Género</label>
+        <br>
+        <input type="text" id="gender" name="gender">
+
+<br>
+        <label for="role">Rol</label>
+        <br>
+        <input type="text" id="role" name="role">
+<br>
+        <label for="va">Actor</label>
+        <br>
+        <input type="text" id="va" name="va">
+<br>
+        <label for="weapon">Arma</label>
+        <br>
+        <input type="text" id="weapon" name="weapon">
+<br>
+<br>
+        <input type="submit" class="add_character_b">
+    </form>
+</script>
 <script id="KH_templatinos" type="text/x-handlebars-template">
+    <a href="#" class="add btn">Añadir</a>
     <div class="scroll-conteneor">
     {{for kh}}
     <div class="scroll-min">
@@ -48,9 +82,11 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jsrender/1.0.14/jsrender.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-serialize-object/2.5.0/jquery.serialize-object.min.js" integrity="sha512-Gn0tSSjkIGAkaZQWjx3Ctl/0dVJuTmjW/f9QyB302kFjU4uTNP4HtA32U2qXs/TRlEsK5CoEqMEMs7LnzLOBsA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <div id="info"></div>
     <script>
+        // * FUNC PARA MOSTRAR LOS PERSONAJES EN EL DOCUMENTO HTML * //
         function showCharacters(){
             // Obtención de los datos del sqlite en forma de JSON a través del una conversión por el app.js
             $.getJSON('/api/kh/',function(result){
@@ -58,7 +94,33 @@
                 let html = $("#KH_templatinos").render(result);
                 $("#info").html(html);
 
-                // Función que elimina un character
+
+                // * FUNCIÓN INTERNA SOBRE LA QUE SE TRASLADAN LOS PJ * //
+                function addAllForms(event){
+                    event.preventDefault();
+                    let form = $("#add_character_form");
+                    let parameters = form.serializeObject();
+                    $.post('/api/kh/', parameters, function (result) {
+                         showCharacters();
+                    }).catch(function (error) {
+                        console.log(error)
+                    });
+                }
+
+
+                // * FUNC AÑADIR PERSONAJES * //
+                function addCharacter(event){
+                    event.preventDefault();
+                    $.getJSON('/api/kh/', function (characters) {
+                        let html = $("#add_templatinos").render();
+                        $("#info").html(html);
+                        $(".add_character_b").on("click",addAllForms);
+                    });
+                }
+
+
+
+                // * FUNC ELIMINAR PERSONAJES * //
                 function deleteCharacter(event){
 
                     // Esta línea de abajo es para evitar que los href te traten de redireccionar como de normal a un sitio
@@ -85,8 +147,7 @@
 
                 // Click borrar llamando al function deleteCharacter
                 $(".del").on("click", deleteCharacter);
-
-
+                $(".add").on("click", addCharacter)
             });
         }
 
