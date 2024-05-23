@@ -76,8 +76,7 @@ app.get('/api/kh', function (req, res){
 // Post de la api de kh
 app.post('/api/kh', function (req, res){
     let data_form = req.body;
-    console.log(data_form)
-
+    //console.log(data_form)
     db.insert(data_form)
         .into('KingdomHeartsCHR')
         .then(function (data){
@@ -87,76 +86,29 @@ app.post('/api/kh', function (req, res){
     });
 });
 
-// Obtener nombres de los personajes de kingdom hearts
-app.get('/api/khNames', function (req, res){
-    db.select('KH.name')
-        .from('KingdomHeartsCHR as KH')
+// Obtener individualmente cada id derivado de una llamada de post
+app.post('/api/kh/:id', function (req, res){
+    let id = req.params.id;
+    let characterData = req.body;
+
+    db('KingdomHeartsCHR')
+        .update(characterData)
+        .where('id', id)
         .then(function (data){
-            result = {}
-            result.khN = data;
-            res.json(result);
-        }).catch(function (error){
-        console.log(error)
-    });
+            res.json(data)
+        })
+        .catch(function (error) {
+            console.log(error)
+        })
 });
 
-// Obtener el género de los personajes de kingdom hearts
-app.get('/api/khGender', function (req, res){
-    db.select('KH.gender')
-        .from('KingdomHeartsCHR as KH')
-        .then(function (data){
-            result = {}
-            result.khG = data;
-            res.json(result);
-        }).catch(function (error){
-        console.log(error)
-    });
-});
-
-// Obtener el rol de los personajes de kingdom hearts
-app.get('/api/khRole', function (req, res){
-    db.select('KH.role')
-        .from('KingdomHeartsCHR as KH')
-        .then(function (data){
-            result = {}
-            result.khR = data;
-            res.json(result);
-        }).catch(function (error){
-        console.log(error)
-    });
-});
-
-// Obtener los actores de los personajes de kingdom hearts
-app.get('/api/khVa', function (req, res){
-    db.select('KH.va')
-        .from('KingdomHeartsCHR as KH')
-        .then(function (data){
-            result = {}
-            result.khV = data;
-            res.json(result);
-        }).catch(function (error){
-        console.log(error)
-    });
-});
-
-// Obtener el arma de los personajes de kingdom hearts
-app.get('/api/khWeapon', function (req, res){
-    db.select('KH.weapon')
-        .from('KingdomHeartsCHR as KH')
-        .then(function (data){
-            result = {}
-            result.khW = data;
-            res.json(result);
-        }).catch(function (error){
-        console.log(error)
-    });
-});
-
+// Obtener a través del ID //
 app.get('/api/kh/:id', function (req, res){
     let id = parseInt(req.params.id);
 
     db.select('KH.id', 'KH.name', 'KH.age', 'KH.gender', 'KH.va', 'KH.role', 'KH.weapon')
         .from('KingdomHeartsCHR as KH')
+        .where('KH.id',id)
         .then(function (data){
             res.json(data);
         }).catch(function (error){

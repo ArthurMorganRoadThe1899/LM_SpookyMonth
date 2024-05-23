@@ -21,6 +21,39 @@
     </nav>
 <br>
 
+<script id="modify_templatinos" type="text/x-handlebars-template">
+        <h1>Añadir Personaje id {{:character.id}}</h1>
+        <form id="modifyCharacter">
+            <label for="name">Nombre</label>
+            <br>
+            <input type="text" id="name" name="name" value="{{:character.name}}">
+            <br>
+            <label for="age">Edad</label>
+            <br>
+            <input type="text" id="age" name="age" value="{{:character.age}}">
+
+            <br>
+            <label for="gender">Género</label>
+            <br>
+            <input type="text" id="gender" name="gender" value="{{:character.gender}}">
+
+            <br>
+            <label for="role">Rol</label>
+            <br>
+            <input type="text" id="role" name="role" value="{{:character.role}}">
+            <br>
+            <label for="va">Actor</label>
+            <br>
+            <input type="text" id="va" name="va" value="{{:character.va}}">
+            <br>
+            <label for="weapon">Arma</label>
+            <br>
+            <input type="text" id="weapon" name="weapon" value="{{:character.weapon}}">
+            <br>
+            <br>
+            <input type="submit" class="modify_character_b" value="Modify" data-id="{{:character.id}}">
+        </form>
+    </script>
 <script id="add_templatinos" type="text/x-handlebars-template">
     <h1>Añadir Personaje</h1>
     <form id="add_character_form">
@@ -67,7 +100,7 @@
                     <br>Rol: {{:role}}
                     <br>Actor: {{:va}}
                     <br>Arma: {{:weapon}}
-                    <br><a href="#" class="mod">Modificar</a>
+                    <br><a href="#" data-id="{{:id}}" class="mod">Modificar</a>
                     <br><a href="#" data-id="{{:id}}" class="del">Eliminar</a>
                     <br><a href="https://arthurmorganroadthe1899.github.io/">Página sexy</a>
                 </p>
@@ -119,6 +152,44 @@
                 }
 
 
+                // * FUNC MODIFICAR PERSONAJES * //
+                function modifyCharacter(event){
+                    event.preventDefault();
+                    let id = $(this).data("id");
+
+                    $.getJSON('/api/kh/' + id, function(dataCharacter){
+                        let character = dataCharacter[0];
+
+                        let data = {
+                            'character': character
+                        }
+
+                        let html = $("#modify_templatinos").render(data);
+                        $("#info").html(html);
+
+                        $('.modify_character_b').on('click', getModifyCharactersParameters)
+                    });
+                }
+
+
+                // * FUNC PARA OBTENER LOS DATOS QUE MODIFICAS DEL PJ PERSONAJES * //
+                function getModifyCharactersParameters(event){
+                    event.preventDefault();
+
+                    let form = $('#modifyCharacter')
+                    let parameters = form.serializeObject();
+
+                    let id = $(this).data("id");
+
+                    $.post('/api/kh/' + id, parameters, function(data){
+                        showCharacters()
+                    })
+                    .catch(function (error){
+                        console.log(error)
+                    })
+
+                }
+
 
                 // * FUNC ELIMINAR PERSONAJES * //
                 function deleteCharacter(event){
@@ -127,7 +198,7 @@
                     event.preventDefault()
 
                     // Llamamos al ID del data-id de la class delete
-                    let id = $(this).data("id")
+                    let id = $(this).data("id");
 
                     // Hacemos que el tipo de petición al la class delete sea DELETE
                     // sobre GET o POST -> (¿Qué tipo de hipermutación de get y post será si es que lo es?)
@@ -142,10 +213,11 @@
                     .catch(function (error) {
                         console.log(error)
                     })
-
                 }
 
+
                 // Click borrar llamando al function deleteCharacter
+                $(".mod").on("click", modifyCharacter);
                 $(".del").on("click", deleteCharacter);
                 $(".add").on("click", addCharacter)
             });
