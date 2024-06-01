@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mother 3</title>
+    <link rel="stylesheet" href="mother.css">
+    <link rel="icon" href="../../images/iconKIyogre.png">
+</head>
+<body>
+
+    <header>
+        <h1 id="OGtitle">Mother 3</h1>
+    </header>
+    
+  <br>
+  <div class="al">
+    <nav  class="decoration">
+      <a href="#Lucas">Lucas & Claus</a>
+      <a href="#Flint">Flint & Hinawa</a>
+      <a href="#Boney">Boney</a>
+      <a href="#Kumatora">Kumatora</a>
+      <a href="#Duster">Duster</a>
+      <a href="#Wess">Wess</a>
+      <a href="#Salsa">Salsa & Samba</a>
+      <a href="#Mr Saturn">Mr Saturn</a>
+    </nav>
+  </div>
+  <br>
+    
+
+
+<!--Hice dos for adaptados, uno para los duales y otro para los individuales-->
+
+<script id="teParteLaMadre3Template" type="text/x-handlebars-template">
+
+<div class="ConT">
+<div class="ConS">
+{{for m3}}
+
+<!--Duales-->
+<div class="conteneor" id="{{:name}}">
+  <div> 
+    <h1 class="pjtxtT">{{:name}}</h1>
+        <img src="{{:image}}" width="50%"/> 
+    <p class="pjtxt">Género: {{:gender}}
+        <br>Edad: {{:age}}
+        <br>Rol: {{:role}}
+        <br>Arma: {{:weapon}}
+        <br>Habilidades: {{:hability}}
+    </p>
+  </div>
+
+  <div>
+    <h1 class="pjtxtT">{{:name}}</h1>
+        <img src="{{:image}}" width="50%"/>
+    <p class="pjtxt">Género: {{:gender}}
+        <br>Edad: {{:age}}
+        <br>Rol: {{:role}}
+        <br>Arma: {{:weapon}}
+        <br>Habilidades: {{:hability}}
+    </p>
+  </div>
+</div>
+
+{{/for}}
+{{for MotherSingleCharacter}}
+
+<!--Individuales-->
+  <div class="conteneor">
+    <div id="{{:name}}">
+    <h1 class="pjtxtT">{{:name}}</h1>
+        <img src="{{:image}}"/>
+    <p class="pjtxt">Género: {{:gender}}
+        <br>Edad: {{:age}}
+        <br>Rol: {{:role}}
+        <br>Habilidades: {{:hability}}
+    </p>
+    </div>
+  </div>  
+
+<br>
+{{/for}}
+</div>
+</div>
+
+</script>
+
+
+
+<footer><a href="../../../index.html">Página principal</a></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jsrender/1.0.14/jsrender.min.js"></script>
+
+<div id="info"></div>
+    <script>
+        $.getJSON('/api/mother',function(result){
+            console.log(result)
+            let html = $("#teParteLaMadre3Template").render(result);
+            $("#info").html(html);
+    });
+    </script>
+</body>
+</html>
